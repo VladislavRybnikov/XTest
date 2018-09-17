@@ -6,6 +6,9 @@ namespace XTest.Core.Const.Enums
 {
     public enum GroupType
     {
-        SestemCodes
+        SestemCodes,
+        CyclicCodes,
+        NonBinaryCodes,
+        OtherСodesAndLaboratoryWork
     }
 }

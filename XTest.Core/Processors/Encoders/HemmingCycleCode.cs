@@ -1,5 +1,4 @@
 ﻿using System;
-using System;
 using System.Collections.Generic;
 using System.Text;
 using XTest.Core.Abstract.Entities;
@@ -7,7 +6,7 @@ using XTest.Core.Const.Enums;
 
 namespace XTest.Core.Processors.Encoders
 {
-    class RecyrentCoder : IEncoder
+    public class HemmingCycleCode : IEncoder
     {
         public static Random _random = new Random();
 
@@ -23,7 +22,7 @@ namespace XTest.Core.Processors.Encoders
         }
         public CodeType CodeType { get; set; }
 
-        public RecyrentCoder(CodeType codeType)
+        public HemmingCycleCode(CodeType codeType)
         {
             CodeType = codeType;
         }
