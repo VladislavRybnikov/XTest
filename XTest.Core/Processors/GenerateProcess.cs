@@ -112,12 +112,12 @@ namespace XTest.Core.Processors
                     questionEntities.AddRange(_baseEncoderProcess
                              .GetQuestionsEncoder(baseTest.CountDecodTest, new EntrophyCoder(CodeType.Dencoding)));
                     break;
-                case QuestionType.Faira:
-                    questionEntities.AddRange(_baseEncoderProcess
-                        .GetQuestionsEncoder(baseTest.CountEncodTest, new FairaCoder(CodeType.Encoding)));
-                    questionEntities.AddRange(_baseEncoderProcess
-                             .GetQuestionsEncoder(baseTest.CountDecodTest, new FairaCoder(CodeType.Dencoding)));
-                    break;
+                //case QuestionType.Faira:
+                //    questionEntities.AddRange(_baseEncoderProcess
+                //        .GetQuestionsEncoder(baseTest.CountEncodTest, new FairaCoder(CodeType.Encoding)));
+                //    questionEntities.AddRange(_baseEncoderProcess
+                //             .GetQuestionsEncoder(baseTest.CountDecodTest, new FairaCoder(CodeType.Dencoding)));
+                //    break;
                 case QuestionType.Gray:
                     questionEntities.AddRange(_baseEncoderProcess
                         .GetQuestionsEncoder(baseTest.CountEncodTest, new GrayCoder(CodeType.Encoding)));

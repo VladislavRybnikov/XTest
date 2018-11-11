@@ -22,10 +22,10 @@ namespace XTest.Core.Processors.Encoders
         }
         public CodeType CodeType { get; set; }
 
-        public AbramsonCoder(CodeType codeType)
-        {
-            CodeType = codeType;
-        }
+        //public AbramsonCoder(CodeType codeType)
+        //{
+        //    CodeType = codeType;
+        //}
 
         private IQuestionEntity Encoder()
         {

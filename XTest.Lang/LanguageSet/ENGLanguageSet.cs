@@ -26,7 +26,7 @@ namespace XTest.Lang.LanguageSet
 
         private static void Initialize()
         {
-            _language = Language.ENG;
+           // _language = Language.ENG;
 
             _data = new Dictionary<Text, string>
             {
