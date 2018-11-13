@@ -137,7 +137,20 @@
                         <ListBoxItem Content="{DynamicResource Abramsone}"/>
                         <ListBoxItem Content="{DynamicResource BCH}"/>
                         <ListBoxItem Content="{DynamicResource DDC}"/>
-
+                        <ListBoxItem Content="{DynamicResource Shenon}"/>
+                        <ListBoxItem Content="{DynamicResource Berger}"/>
+                        <ListBoxItem Content="{DynamicResource Greu}"/>
+                        <ListBoxItem Content="{DynamicResource Cyclic}"/>
+                        <ListBoxItem Content="{DynamicResource Systematic}"/>
+                        <ListBoxItem Content="{DynamicResource PrimaryNonDouble}"/>
+                        <ListBoxItem Content="{DynamicResource CheckQ}"/>
+                        <ListBoxItem Content="{DynamicResource EasyReturt}"/>
+                        <ListBoxItem Content="{DynamicResource Iterative}"/>
+                        <ListBoxItem Content="{DynamicResource Haffman}"/>
+                        <ListBoxItem Content="{DynamicResource Satellite}"/>
+                        <ListBoxItem Content="{DynamicResource Recurent}"/>
+                        <ListBoxItem Content="{DynamicResource Entrophy}"/>
+                        <ListBoxItem Content="{DynamicResource ChannelCode}"/>
                     </ListBox>
                     <Rectangle Grid.Row="1"
                                Grid.Column="1"

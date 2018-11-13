@@ -383,4 +383,20 @@
     <system:String x:Key="StreamingServices">Streaming services</system:String>
 
     <system:String x:Key="DDC">DDC</system:String>
+    <system:String x:Key="Shenon">Shenon</system:String>
+    <system:String x:Key="Berger">Berger</system:String>
+    <system:String x:Key="Greu">Greu</system:String>
+    <system:String x:Key="Cyclic">Cyclic</system:String>
+    <system:String x:Key="Systematic">Systematic</system:String>
+    <system:String x:Key="PrimaryNonDouble">PrimaryNonDouble</system:String>
+    <system:String x:Key="CheckQ">CheckQ</system:String>
+    <system:String x:Key="EasyReturt">EasyReturt</system:String>
+    <system:String x:Key="Iterative">Iterative</system:String>
+    <system:String x:Key="Haffman">Haffman</system:String>
+    <system:String x:Key="Satellite">Satellite</system:String>
+    <system:String x:Key="Recurent">Recurent</system:String>
+    <system:String x:Key="Entrophy">Entrophy</system:String>
+    <system:String x:Key="ChannelCode">ChannelCode</system:String>
+   
+
 </ResourceDictionary>
