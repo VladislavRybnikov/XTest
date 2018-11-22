@@ -14,6 +14,12 @@ namespace XTest.Core.Processors
 {
     public class AnswerCheker : IAnswerCheker
     {
+        private readonly HistoryProcess _historyProcess;
+
+        public AnswerCheker()
+        {
+            _historyProcess = new HistoryProcess();
+        }
         public IDataResult<IMarkEntity> Check(ITestAnswerEntity answer)
         {
             throw new NotImplementedException();
@@ -42,6 +48,8 @@ namespace XTest.Core.Processors
             }
 
             testAnswerEntity.QuestionEntity.StateType = result ? StateType.Corect : StateType.NonCorect;
+
+            _historyProcess.AddHistory(testAnswerEntity, result);
 
             methodResult.Data = testAnswerEntity.QuestionEntity.StateType;
             methodResult.Success = true;
