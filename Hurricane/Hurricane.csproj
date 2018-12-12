@@ -451,11 +451,20 @@
     <Compile Include="Views\UserControls\CodingView.xaml.cs">
       <DependentUpon>CodingView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\UserControls\Coding\AbramsoneView.xaml.cs">
+      <DependentUpon>AbramsoneView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\Coding\BaseView.xaml.cs">
+      <DependentUpon>BaseView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControls\EqualizerView.xaml.cs">
       <DependentUpon>EqualizerView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\UserControls\KeyboardShortcutsView.xaml.cs">
       <DependentUpon>KeyboardShortcutsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\ResultView.xaml.cs">
+      <DependentUpon>ResultView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\UserControls\SettingsView.xaml.cs">
       <DependentUpon>SettingsView.xaml</DependentUpon>
@@ -469,6 +478,62 @@
     <Compile Include="Views\UpdateWindow.xaml.cs">
       <DependentUpon>UpdateWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="XTest.Core\Abstract\Entities\Common\IDataResult.cs" />
+    <Compile Include="XTest.Core\Abstract\Entities\Common\IResult.cs" />
+    <Compile Include="XTest.Core\Abstract\Entities\Config\ConfigTest.cs" />
+    <Compile Include="XTest.Core\Abstract\Entities\IBaseTestEntity.cs" />
+    <Compile Include="XTest.Core\Abstract\Entities\IMarkEntity.cs" />
+    <Compile Include="XTest.Core\Abstract\Entities\IQuestionAnswerEntity.cs" />
+    <Compile Include="XTest.Core\Abstract\Entities\IQuestionEntity.cs" />
+    <Compile Include="XTest.Core\Abstract\Entities\ITestAnswerEntity.cs" />
+    <Compile Include="XTest.Core\Abstract\Entities\ITestEntity.cs" />
+    <Compile Include="XTest.Core\Abstract\IAnswerCheker.cs" />
+    <Compile Include="XTest.Core\Abstract\Processors\AbstractFactory.cs" />
+    <Compile Include="XTest.Core\Abstract\Processors\IGenerateProcess.cs" />
+    <Compile Include="XTest.Core\Const\Enums\CodeType.cs" />
+    <Compile Include="XTest.Core\Const\Enums\CodingType.cs" />
+    <Compile Include="XTest.Core\Const\Enums\GroupType.cs" />
+    <Compile Include="XTest.Core\Const\Enums\QuestionType.cs" />
+    <Compile Include="XTest.Core\Const\Enums\StateType.cs" />
+    <Compile Include="XTest.Core\Const\Enums\TestType.cs" />
+    <Compile Include="XTest.Core\Entities\BaseTestEntity.cs" />
+    <Compile Include="XTest.Core\Entities\BaseValue.cs" />
+    <Compile Include="XTest.Core\Entities\Common\DataResult.cs" />
+    <Compile Include="XTest.Core\Entities\Common\Result.cs" />
+    <Compile Include="XTest.Core\Entities\History\AnswerHistoryEntity.cs" />
+    <Compile Include="XTest.Core\Entities\History\CodingHistory.cs" />
+    <Compile Include="XTest.Core\Entities\History\MainHistoryEntity.cs" />
+    <Compile Include="XTest.Core\Entities\QuestionEntity.cs" />
+    <Compile Include="XTest.Core\Entities\TestAnswerEntity.cs" />
+    <Compile Include="XTest.Core\Entities\TestEntity.cs" />
+    <Compile Include="XTest.Core\Holders\Testholder.cs" />
+    <Compile Include="XTest.Core\Processors\AnswerCheker.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\AbramsonCoder.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\BaseEncoderProcess.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\BCHCoder.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\BergerCoder.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\ChannelCoder.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\DDC.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\EasyReturnCoder.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\EllieasCoder.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\EntrophyCoder.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\FairaCoder.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\GrayCoder.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\HaphmanaCoder.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\HemmingCycleCode.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\IterativeCoder.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\ModulationCheckCoder.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\ModuleCodeQ.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\PrimaryNonDualOnes.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\RecyrentCoder.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\RidaMalleraCoder.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\SatelliteСodes.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\ShenonPhanoCoder.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\TheSystematicCodeOfHemming.cs" />
+    <Compile Include="XTest.Core\Processors\Encoders\VarshamovaCoder.cs" />
+    <Compile Include="XTest.Core\Processors\GenerateProcess.cs" />
+    <Compile Include="XTest.Core\Processors\HistoryProcess.cs" />
+    <Compile Include="XTest.Core\Processors\SerializerProcess.cs" />
     <Page Include="AppMainWindow\MahAppsExtensions\Dialogs\AdvancedInputDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -791,12 +856,21 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\UserControls\Coding\AbramsoneView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Coding\BaseView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\UserControls\EqualizerView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserControls\KeyboardShortcutsView.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\ResultView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserControls\SettingsView.xaml">

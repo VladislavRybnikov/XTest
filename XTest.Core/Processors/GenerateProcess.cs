@@ -32,13 +32,13 @@ namespace XTest.Core.Processors
             return methodResult;
         }
 
-        public IDataResult<ICollection<IQuestionEntity>> GetQuestions(string nameTest)
+        public IDataResult<ICollection<IQuestionEntity>> GetQuestions(QuestionType questionType)
         {
             IDataResult<ICollection<IQuestionEntity>> methodResult =
                 new DataResult<ICollection<IQuestionEntity>>();
 
             IBaseTestEntity baseTest = ConfigTest.TestEntities
-                .FirstOrDefault(p => p.Name.ToLower().Equals(nameTest.ToLower()));
+                .FirstOrDefault(p => p.QuestionType== questionType);
 
             if(baseTest==null)
             {

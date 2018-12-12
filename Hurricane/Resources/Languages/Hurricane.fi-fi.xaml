@@ -245,4 +245,6 @@
     <system:String x:Key="Recurent">Рекурентний код</system:String>
     <system:String x:Key="Entrophy">Кількість інформації та ентропія</system:String>
     <system:String x:Key="ChannelCode">Канальні коди</system:String>
+    <system:String x:Key="BaseStartTest">Розпочати</system:String>
+    <system:String x:Key="NextTest">Далі</system:String>
 </ResourceDictionary>

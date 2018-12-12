@@ -28,6 +28,9 @@
     
     
     <system:String x:Key="Abramsone">Abramsone</system:String>
+    <system:String x:Key="BaseStartTest">Start</system:String>
+    <system:String x:Key="NextTest">Next</system:String>
+    <system:String x:Key="Answer">Answer</system:String>
     <system:String x:Key="BCH">BCH</system:String>
 
     <system:String x:Key="Presets">Presets</system:String>

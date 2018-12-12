@@ -4,6 +4,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using Hurricane.PluginAPI.AudioVisualisation;
 using Hurricane.ViewModels;
+using Hurricane.Views.UserControls.Coding;
 
 namespace Hurricane.AppMainWindow.WindowSkins
 {
@@ -33,7 +34,20 @@ namespace Hurricane.AppMainWindow.WindowSkins
             };
 
             SettingsViewModel.Instance.Load();
-            
+            nameCodings.SelectionChanged += NameCodings_SelectionChanged;
+
+
+        }
+
+        private void NameCodings_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+            ListBox listBox = (ListBox)sender;
+            ListBoxItem listBoxItem = (ListBoxItem)listBox.SelectedItem;
+            string value = (string)listBoxItem.Content;
+            BaseView baseView = new BaseView(value, BaseViewGrid);
+            BaseViewGrid.Children.Clear();
+            BaseViewGrid.Children.Add(baseView);
         }
 
         public event EventHandler DragMoveStart;

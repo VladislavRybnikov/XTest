@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using XTest.Core.Abstract.Entities;
 using XTest.Core.Const.Enums;
+using XTest.Core.Entities;
 
 namespace XTest.Core.Processors.Encoders
 {
@@ -29,11 +30,39 @@ namespace XTest.Core.Processors.Encoders
 
         private IQuestionEntity Encoder()
         {
-            throw new Exception();
+            IQuestionEntity questionEntity = new QuestionEntity();
+            questionEntity.QuestionType = QuestionType.Abramson;
+            questionEntity.CodeType = CodeType;
+
+            questionEntity.Description = "Закодируйте сообщение";
+            questionEntity.Answer = new BaseValue()
+            { Value = "1101010100 \n\n" +
+            "Непроводимый полином P1: 11101" };
+            questionEntity.Answer = new BaseValue()
+            {
+                Value = "110101010011010"
+            };
+
+            return questionEntity;
         }
         private IQuestionEntity Decoder()
         {
-            throw new Exception();
+            IQuestionEntity questionEntity = new QuestionEntity();
+            questionEntity.QuestionType = QuestionType.Abramson;
+            questionEntity.CodeType = CodeType;
+
+            questionEntity.Description = "Закодируйте сообщение";
+            questionEntity.Answer = new BaseValue()
+            {
+                Value = "011010001000110\n\n" +
+            "Непроводимый полином P1: 10111"
+            };
+            questionEntity.Answer = new BaseValue()
+            {
+                Value = "110101010011010"
+            };
+
+            return questionEntity;
         }
     }
 }
