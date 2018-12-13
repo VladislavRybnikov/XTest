@@ -25,6 +25,13 @@ namespace Hurricane.XTest.Core.Processors.Encoders
         //    CodeType = codeType;
         //}
 
+       private int GetRandom()
+        {
+            Random random = new Random();
+            int number = random.Next(100, 999999999);
+            return number;
+        }
+
         private IQuestionEntity Encoder()
         {
             throw new Exception();

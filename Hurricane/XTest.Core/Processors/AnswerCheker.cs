@@ -40,7 +40,7 @@ namespace Hurricane.XTest.Core.Processors
             else
             {
                 result = testAnswerEntity.Answer.Value.ToLower()
-                    .Equals(testAnswerEntity.QuestionEntity.Answer.Value.ToLower());
+                    .Equals(testAnswerEntity?.QuestionEntity?.Answer?.Value?.ToLower());
             }
 
             testAnswerEntity.QuestionEntity.StateType = result ? StateType.Corect : StateType.NonCorect;

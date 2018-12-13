@@ -31,10 +31,12 @@ namespace Hurricane.Views.UserControls.Coding
         private  IQuestionEntity _currentQuestionEntity;
         private int number=1;
         private readonly IAnswerCheker _answerCheker;
+        private Grid _grid;
 
-        public AbramsoneView()
+        public AbramsoneView(Grid grid)
         {
             InitializeComponent();
+            _grid = grid;
             StaertTest.Click += StaertTest_Click;
             _generateProcess = new GenerateProcess();
             _answerCheker = new AnswerCheker();
@@ -72,7 +74,9 @@ namespace Hurricane.Views.UserControls.Coding
             }
             else
             {
-
+                JsonParser<IQuestionEntity>.SaveList.Clear();
+                _grid.Children.Clear();
+                _grid.Children.Add(new ResultView(_grid, this));
             }
         }
     }

@@ -457,6 +457,9 @@
     <Compile Include="Views\UserControls\Coding\BaseView.xaml.cs">
       <DependentUpon>BaseView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\UserControls\Coding\EllieasCoderView.xaml.cs">
+      <DependentUpon>EllieasCoderView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControls\EqualizerView.xaml.cs">
       <DependentUpon>EqualizerView.xaml</DependentUpon>
     </Compile>
@@ -533,6 +536,7 @@
     <Compile Include="XTest.Core\Processors\Encoders\VarshamovaCoder.cs" />
     <Compile Include="XTest.Core\Processors\GenerateProcess.cs" />
     <Compile Include="XTest.Core\Processors\HistoryProcess.cs" />
+    <Compile Include="XTest.Core\Processors\JsonParser.cs" />
     <Compile Include="XTest.Core\Processors\SerializerProcess.cs" />
     <Page Include="AppMainWindow\MahAppsExtensions\Dialogs\AdvancedInputDialog.xaml">
       <SubType>Designer</SubType>
@@ -860,6 +864,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserControls\Coding\BaseView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Coding\EllieasCoderView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserControls\EqualizerView.xaml">

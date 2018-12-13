@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Hurricane.XTest.Core.Abstract.Entities;
+using Hurricane.XTest.Core.Processors;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,10 +33,12 @@ namespace Hurricane.Views.UserControls.Coding
 
         private void StaertTest_Click(object sender, RoutedEventArgs e)
         {
+            _currentGrid.Children.Clear();
+            JsonParser<IQuestionEntity>.SaveList.Clear();
             if (NameTest.Text.ToLower().Equals("Abramsone".ToLower()))
             {
-                _currentGrid.Children.Clear();
-                _currentGrid.Children.Add(new AbramsoneView());
+               
+                _currentGrid.Children.Add(new AbramsoneView(_currentGrid));
             }
           
         }

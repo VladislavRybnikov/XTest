@@ -25,8 +25,14 @@
     <system:String x:Key="RemovePlaylist">Remove playlist</system:String>
     <system:String x:Key="RemoveDuplicates">Remove duplicates</system:String>
     <system:String x:Key="NoArtist">no artist</system:String>
-    
-    
+    <system:String x:Key="ResultTest">Result</system:String>
+    <system:String x:Key="NameTest">Name Test: </system:String>
+    <system:String x:Key="NumberQuestions">Number of questions: </system:String>
+    <system:String x:Key="NumberCorrectQuestions">Number of correct questions: </system:String>
+    <system:String x:Key="Trynumber">Try number: </system:String>
+    <system:String x:Key="NewTest">New Test:</system:String>
+
+
     <system:String x:Key="Abramsone">Abramsone</system:String>
     <system:String x:Key="BaseStartTest">Start</system:String>
     <system:String x:Key="NextTest">Next</system:String>

@@ -206,6 +206,8 @@ namespace Hurricane.XTest.Core.Processors
 
         }
 
+        public static string BasePath = "Encoder";
+
         public IDataResult<string> GetTheotry(string nameTest)
         {
             return null;

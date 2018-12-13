@@ -5,6 +5,7 @@ using System.Windows.Input;
 using Hurricane.PluginAPI.AudioVisualisation;
 using Hurricane.ViewModels;
 using Hurricane.Views.UserControls.Coding;
+using Hurricane.XTest.Core.Processors;
 
 namespace Hurricane.AppMainWindow.WindowSkins
 {
@@ -32,7 +33,7 @@ namespace Hurricane.AppMainWindow.WindowSkins
                 SupportsCustomBackground = true,
                 SupportsMinimizingToTray = true
             };
-
+            SerializerProcess.Deserialize();
             SettingsViewModel.Instance.Load();
             nameCodings.SelectionChanged += NameCodings_SelectionChanged;
 
