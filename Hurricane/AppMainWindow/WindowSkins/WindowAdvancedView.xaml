@@ -139,6 +139,7 @@
                         <TreeViewItem Header="Systematic codes">
                             <TreeViewItem Header="{DynamicResource Abramsone}"/>
                             <TreeViewItem Header="{DynamicResource BCH}"/>
+                            <TreeViewItem Header="{DynamicResource Ellieas}"/>
 
 
                         </TreeViewItem>

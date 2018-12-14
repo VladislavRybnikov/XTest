@@ -1,4 +1,5 @@
 ﻿using Hurricane.XTest.Core.Abstract.Entities;
+using Hurricane.XTest.Core.Entities.History;
 using Hurricane.XTest.Core.Processors;
 using System;
 using System.Collections.Generic;
@@ -27,6 +28,13 @@ namespace Hurricane.Views.UserControls.Coding
         {
             InitializeComponent();
             NameTest.Text = name;
+            var temp = MainHistoryEntity.CodingHistorys?.FirstOrDefault(p => p.NameTest ==
+                name);
+            DateTest.Text += temp?.TestHistorys?.Last()?.CreateTiem.Date;
+            BestMark.Text+= temp?.TestHistorys?.Max(p=>p.Mark)??0;
+            Try.Text +=
+                   temp?
+              .TestHistorys?.Count()??0;
             _currentGrid = currentGrid;
             StaertTest.Click += StaertTest_Click;
         }
@@ -35,7 +43,7 @@ namespace Hurricane.Views.UserControls.Coding
         {
             _currentGrid.Children.Clear();
             JsonParser<IQuestionEntity>.SaveList.Clear();
-            if (NameTest.Text.ToLower().Equals("Abramsone".ToLower()))
+            if (NameTest.Text.ToLower().Equals("Abramson".ToLower()))
             {
                
                 _currentGrid.Children.Add(new AbramsoneView(_currentGrid));
@@ -43,6 +51,10 @@ namespace Hurricane.Views.UserControls.Coding
             else if (NameTest.Text.ToLower().Equals("BCH".ToLower()))
             {
                 _currentGrid.Children.Add(new BCHView(_currentGrid));
+            }
+            else if (NameTest.Text.ToLower().Equals("Ellieas".ToLower()))
+            {
+                _currentGrid.Children.Add(new EllieasCoderView(_currentGrid));
             }
             else if (NameTest.Text.ToLower().Equals("DDC".ToLower()))
             {
@@ -87,5 +99,7 @@ namespace Hurricane.Views.UserControls.Coding
 
 
         }
+
+    
     }
 }

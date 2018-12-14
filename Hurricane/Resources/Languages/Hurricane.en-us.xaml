@@ -33,7 +33,7 @@
     <system:String x:Key="NewTest">New Test:</system:String>
 
 
-    <system:String x:Key="Abramsone">Abramsone</system:String>
+    <system:String x:Key="Abramsone">Abramson</system:String>
     <system:String x:Key="BaseStartTest">Start</system:String>
     <system:String x:Key="NextTest">Next</system:String>
     <system:String x:Key="Answer">Answer</system:String>
@@ -406,6 +406,8 @@
     <system:String x:Key="Recurent">Recurent</system:String>
     <system:String x:Key="Entrophy">Entrophy</system:String>
     <system:String x:Key="ChannelCode">ChannelCode</system:String>
+    <system:String x:Key="Ellieas">Ellieas</system:String>
+    
    
 
 </ResourceDictionary>

@@ -74,7 +74,7 @@ namespace Hurricane.XTest.Core.Processors.Encoders
             {
                 int tempSum = 0;
 
-                for (int j = 0; i < matrix[i].Length; j++)
+                for (int j = 0; j < matrix[i].Length; j++)
                 {
                     tempSum += matrix[j][i];
                 }
