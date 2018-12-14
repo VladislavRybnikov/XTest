@@ -1,12 +1,14 @@
 ﻿using System;
 using Hurricane.XTest.Core.Abstract.Entities;
 using Hurricane.XTest.Core.Const.Enums;
+using Hurricane.XTest.Core.Entities;
 
 namespace Hurricane.XTest.Core.Processors.Encoders
 {
     public class FairaCoder : IEncoder
     {
         public static Random _random = new Random();
+        private JsonParser<QuestionEntity> _jsonParser;
 
         public IQuestionEntity QuestionEntity
         {
@@ -20,10 +22,11 @@ namespace Hurricane.XTest.Core.Processors.Encoders
         }
         public CodeType CodeType { get; set; }
 
-        //public AbramsonCoder(CodeType codeType)
-        //{
-        //    CodeType = codeType;
-        //}
+        public FairaCoder(CodeType codeType)
+        {
+            CodeType = codeType;
+            _jsonParser = new JsonParser<QuestionEntity>();
+        }
 
        private int GetRandom()
         {
@@ -34,11 +37,11 @@ namespace Hurricane.XTest.Core.Processors.Encoders
 
         private IQuestionEntity Encoder()
         {
-            throw new Exception();
+            return _jsonParser.GetIQuestionEntity(1, 11, "FairaCoder");
         }
         private IQuestionEntity Decoder()
         {
-            throw new Exception();
+            return _jsonParser.GetIQuestionEntity(11, 21, "FairaCoder");
         }
     }
 }

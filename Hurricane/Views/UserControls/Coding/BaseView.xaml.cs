@@ -40,7 +40,52 @@ namespace Hurricane.Views.UserControls.Coding
                
                 _currentGrid.Children.Add(new AbramsoneView(_currentGrid));
             }
-          
+            else if (NameTest.Text.ToLower().Equals("BCH".ToLower()))
+            {
+                _currentGrid.Children.Add(new BCHView(_currentGrid));
+            }
+            else if (NameTest.Text.ToLower().Equals("DDC".ToLower()))
+            {
+                _currentGrid.Children.Add(new DDCView(_currentGrid));
+            }
+            else if (NameTest.Text.ToLower().Equals("Berger".ToLower()))
+            {
+                _currentGrid.Children.Add(new BergerView(_currentGrid));
+            }
+            else if (NameTest.Text.ToLower().Equals("Recurent".ToLower()))
+            {
+                _currentGrid.Children.Add(new BergerView(_currentGrid));
+            }
+            else if (NameTest.Text.ToLower().Equals("Systematic".ToLower()))
+            {
+                _currentGrid.Children.Add(new SystematicHemmingView(_currentGrid));
+            }
+            else if (NameTest.Text.ToLower().Equals("Cyclic".ToLower()))
+            {
+                _currentGrid.Children.Add(new CycleHemmingView(_currentGrid));
+            }
+            else if (NameTest.Text.ToLower().Equals("Faira".ToLower()))
+            {
+                _currentGrid.Children.Add(new FairaView(_currentGrid));
+            }
+            else if (NameTest.Text.ToLower().Equals("PrimaryNonDouble".ToLower()))
+            {
+                _currentGrid.Children.Add(new PrimaryNonDualOnesView(_currentGrid));
+            }
+            else if (NameTest.Text.ToLower().Equals("CheckQ".ToLower()))
+            {
+                _currentGrid.Children.Add(new ModuleCodeQView(_currentGrid));
+            }
+            else if (NameTest.Text.ToLower().Equals("EasyReturt".ToLower()))
+            {
+                _currentGrid.Children.Add(new EasyReturnView(_currentGrid));
+            }
+            else if (NameTest.Text.ToLower().Equals("Greu".ToLower()))
+            {
+                _currentGrid.Children.Add(new GrayView(_currentGrid));
+            }
+
+
         }
     }
 }

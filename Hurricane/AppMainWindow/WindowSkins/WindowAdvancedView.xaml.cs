@@ -35,7 +35,7 @@ namespace Hurricane.AppMainWindow.WindowSkins
             };
             SerializerProcess.Deserialize();
             SettingsViewModel.Instance.Load();
-            nameCodings.SelectionChanged += NameCodings_SelectionChanged;
+            
 
 
         }

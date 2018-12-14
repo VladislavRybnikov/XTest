@@ -234,6 +234,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Resources\Languages\DDCView.xaml.cs">
+      <DependentUpon>DDCView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Settings\Converter\GroupConverter.cs" />
     <Compile Include="Settings\Converter\TransitionConverter.cs" />
     <Compile Include="Settings\PasswordEntry.cs" />
@@ -457,8 +460,44 @@
     <Compile Include="Views\UserControls\Coding\BaseView.xaml.cs">
       <DependentUpon>BaseView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\UserControls\Coding\BCHView.xaml.cs">
+      <DependentUpon>BCHView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\Coding\BergerView.xaml.cs">
+      <DependentUpon>BergerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\Coding\CycleHemmingView.xaml.cs">
+      <DependentUpon>CycleHemmingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\Coding\DDCView.xaml.cs">
+      <DependentUpon>DDCView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\Coding\EasyReturnView.xaml.cs">
+      <DependentUpon>EasyReturnView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControls\Coding\EllieasCoderView.xaml.cs">
       <DependentUpon>EllieasCoderView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\Coding\FairaView.xaml.cs">
+      <DependentUpon>FairaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\Coding\GrayView.xaml.cs">
+      <DependentUpon>GrayView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\Coding\ModuleCodeQView.xaml.cs">
+      <DependentUpon>ModuleCodeQView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\Coding\PrimaryNonDualOnesView.xaml.cs">
+      <DependentUpon>PrimaryNonDualOnesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\Coding\RecyrentView.xaml.cs">
+      <DependentUpon>RecyrentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\Coding\SystematicHemmingView.xaml.cs">
+      <DependentUpon>SystematicHemmingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\Coding\Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\UserControls\EqualizerView.xaml.cs">
       <DependentUpon>EqualizerView.xaml</DependentUpon>
@@ -599,6 +638,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Notification\Views\NotificationTopWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Languages\DDCView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -866,7 +909,55 @@
     <Page Include="Views\UserControls\Coding\BaseView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\UserControls\Coding\BCHView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Coding\BergerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Coding\CycleHemmingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Coding\DDCView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Coding\EasyReturnView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\UserControls\Coding\EllieasCoderView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Coding\FairaView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Coding\GrayView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Coding\ModuleCodeQView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Coding\PrimaryNonDualOnesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Coding\RecyrentView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Coding\SystematicHemmingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Coding\Window1.xaml">
+      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserControls\EqualizerView.xaml">

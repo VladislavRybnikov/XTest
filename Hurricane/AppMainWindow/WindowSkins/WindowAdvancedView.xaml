@@ -121,7 +121,7 @@
                     </Grid.RowDefinitions>
 
 
-                    <ListBox Grid.Row="1"
+                    <TreeView Grid.Row="1"
                              Grid.Column="0"
                              Margin="5"
                              Background="Transparent"
@@ -135,6 +135,12 @@
                              dd:DragDrop.IsDragSource="True"
                              dd:DragDrop.IsDropTarget="True"
                              x:Name="nameCodings">
+                        <TreeViewItem Header="Базы данных">
+                            <TreeViewItem Header="MS SQL Server" />
+                            <TreeViewItem Header="MySQL" />
+                            <TreeViewItem Header="MongoDB" />
+                            <TreeViewItem Header="Postgres" />
+                        </TreeViewItem>
                         <ListBoxItem Content="{DynamicResource Abramsone}"/>
                         <ListBoxItem Content="{DynamicResource BCH}"/>
                         <ListBoxItem Content="{DynamicResource DDC}"/>
@@ -152,7 +158,7 @@
                         <ListBoxItem Content="{DynamicResource Recurent}"/>
                         <ListBoxItem Content="{DynamicResource Entrophy}"/>
                         <ListBoxItem Content="{DynamicResource ChannelCode}"/>
-                    </ListBox>
+                    </TreeView>
                     <Rectangle Grid.Row="1"
                                Grid.Column="1"
                                Width="1"

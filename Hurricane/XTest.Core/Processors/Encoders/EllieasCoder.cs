@@ -19,6 +19,7 @@ namespace Hurricane.XTest.Core.Processors.Encoders
     public class EllieasCoder : IEncoder
     {
         public static Random _random = new Random();
+        private JsonParser<QuestionEntity> _jsonParser;
 
         public IQuestionEntity QuestionEntity
         {
@@ -34,6 +35,7 @@ namespace Hurricane.XTest.Core.Processors.Encoders
 
         public EllieasCoder(CodeType codeType)
         {
+            
             CodeType = codeType;
         }
 
