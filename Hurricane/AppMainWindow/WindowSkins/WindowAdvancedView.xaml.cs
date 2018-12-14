@@ -35,9 +35,22 @@ namespace Hurricane.AppMainWindow.WindowSkins
             };
             SerializerProcess.Deserialize();
             SettingsViewModel.Instance.Load();
-            
+           
+            nameCodings.SelectedItemChanged += NameCodings_SelectedItemChanged;
 
 
+        }
+
+        private void NameCodings_SelectedItemChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
+        {
+            TreeView treeView = (TreeView)sender;
+            TreeViewItem treeViewItem = (TreeViewItem)treeView.SelectedItem;
+            string str = (string)treeViewItem.Header;
+            BaseView baseView = new BaseView(str, BaseViewGrid);
+            BaseViewGrid.Children.Clear();
+            BaseViewGrid.Children.Add(baseView);
+
+         
         }
 
         private void NameCodings_SelectionChanged(object sender, SelectionChangedEventArgs e)

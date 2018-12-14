@@ -126,38 +126,56 @@
                              Margin="5"
                              Background="Transparent"
                              DisplayMemberPath="Name"
-                            
+                             SelectedValuePath="{Binding MusicManager.SelectedPlaylist}"
                              ScrollViewer.HorizontalScrollBarVisibility="Hidden"
-                             SelectedItem="{Binding MusicManager.SelectedPlaylist}"
+                            
                              dd:DragDrop.DefaultDragAdornerOpacity=".8"
                              dd:DragDrop.DragAdornerTemplate="{StaticResource DragAdornerPlaylist}"
                              dd:DragDrop.DropHandler="{Binding PlaylistListDropHandler}"
                              dd:DragDrop.IsDragSource="True"
                              dd:DragDrop.IsDropTarget="True"
                              x:Name="nameCodings">
-                        <TreeViewItem Header="Базы данных">
-                            <TreeViewItem Header="MS SQL Server" />
-                            <TreeViewItem Header="MySQL" />
-                            <TreeViewItem Header="MongoDB" />
-                            <TreeViewItem Header="Postgres" />
+
+                        <TreeViewItem Header="Systematic codes">
+                            <TreeViewItem Header="{DynamicResource Abramsone}"/>
+                            <TreeViewItem Header="{DynamicResource BCH}"/>
+
+
                         </TreeViewItem>
-                        <ListBoxItem Content="{DynamicResource Abramsone}"/>
-                        <ListBoxItem Content="{DynamicResource BCH}"/>
-                        <ListBoxItem Content="{DynamicResource DDC}"/>
-                        <ListBoxItem Content="{DynamicResource Shenon}"/>
-                        <ListBoxItem Content="{DynamicResource Berger}"/>
-                        <ListBoxItem Content="{DynamicResource Greu}"/>
-                        <ListBoxItem Content="{DynamicResource Cyclic}"/>
-                        <ListBoxItem Content="{DynamicResource Systematic}"/>
-                        <ListBoxItem Content="{DynamicResource PrimaryNonDouble}"/>
-                        <ListBoxItem Content="{DynamicResource CheckQ}"/>
-                        <ListBoxItem Content="{DynamicResource EasyReturt}"/>
-                        <ListBoxItem Content="{DynamicResource Iterative}"/>
-                        <ListBoxItem Content="{DynamicResource Haffman}"/>
-                        <ListBoxItem Content="{DynamicResource Satellite}"/>
-                        <ListBoxItem Content="{DynamicResource Recurent}"/>
-                        <ListBoxItem Content="{DynamicResource Entrophy}"/>
-                        <ListBoxItem Content="{DynamicResource ChannelCode}"/>
+                        <TreeViewItem Header="Сyclic codes">
+                            <TreeViewItem Header="{DynamicResource DDC}"/>
+                            <TreeViewItem Header="{DynamicResource Shenon}"/>
+                            <TreeViewItem Header="{DynamicResource Berger}"/>
+
+
+                        </TreeViewItem>
+                        <TreeViewItem Header="Non-binary codes">
+                            <TreeViewItem Header="{DynamicResource Greu}"/>
+                            <TreeViewItem Header="{DynamicResource Cyclic}"/>
+                            <TreeViewItem Header="{DynamicResource Systematic}"/>
+                            <TreeViewItem Header="{DynamicResource PrimaryNonDouble}"/>
+
+
+                        </TreeViewItem>
+                        <TreeViewItem Header="Other codes">
+
+
+                            <TreeViewItem Header="{DynamicResource CheckQ}"/>
+                            <TreeViewItem Header="{DynamicResource EasyReturt}"/>
+                            <TreeViewItem Header="{DynamicResource Iterative}"/>
+                            <TreeViewItem Header="{DynamicResource Haffman}"/>
+                            <TreeViewItem Header="{DynamicResource Satellite}"/>
+                            <TreeViewItem Header="{DynamicResource Recurent}"/>
+                            <TreeViewItem Header="{DynamicResource Entrophy}"/>
+                            <TreeViewItem Header="{DynamicResource ChannelCode}"/>
+
+
+                        </TreeViewItem>
+
+                        
+                       
+                       
+                        
                     </TreeView>
                     <Rectangle Grid.Row="1"
                                Grid.Column="1"
@@ -324,6 +342,65 @@
                             </Style>
                         </TextBlock.Style>
                     </TextBlock>
+
+                    <Grid>
+                        <TreeView Grid.Row="1"
+                             Grid.Column="0"
+                             Margin="5"
+                             Background="Transparent"
+                             DisplayMemberPath="Name"
+                             SelectedValuePath="{Binding MusicManager.SelectedPlaylist}"
+                             ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                            
+                             dd:DragDrop.DefaultDragAdornerOpacity=".8"
+                             
+                             dd:DragDrop.DropHandler="{Binding PlaylistListDropHandler}"
+                             dd:DragDrop.IsDragSource="True"
+                             dd:DragDrop.IsDropTarget="True"
+                             x:Name="nameCodings1">
+
+                            <TreeViewItem Header="Systematic codes">
+                                <TreeViewItem Header="{DynamicResource Abramsone}"/>
+                                <TreeViewItem Header="{DynamicResource BCH}"/>
+
+
+                            </TreeViewItem>
+                            <TreeViewItem Header="Сyclic codes">
+                                <TreeViewItem Header="{DynamicResource DDC}"/>
+                                <TreeViewItem Header="{DynamicResource Shenon}"/>
+                                <TreeViewItem Header="{DynamicResource Berger}"/>
+
+
+                            </TreeViewItem>
+                            <TreeViewItem Header="Non-binary codes">
+                                <TreeViewItem Header="{DynamicResource Greu}"/>
+                                <TreeViewItem Header="{DynamicResource Cyclic}"/>
+                                <TreeViewItem Header="{DynamicResource Systematic}"/>
+                                <TreeViewItem Header="{DynamicResource PrimaryNonDouble}"/>
+
+
+                            </TreeViewItem>
+                            <TreeViewItem Header="Other codes">
+
+
+                                <TreeViewItem Header="{DynamicResource CheckQ}"/>
+                                <TreeViewItem Header="{DynamicResource EasyReturt}"/>
+                                <TreeViewItem Header="{DynamicResource Iterative}"/>
+                                <TreeViewItem Header="{DynamicResource Haffman}"/>
+                                <TreeViewItem Header="{DynamicResource Satellite}"/>
+                                <TreeViewItem Header="{DynamicResource Recurent}"/>
+                                <TreeViewItem Header="{DynamicResource Entrophy}"/>
+                                <TreeViewItem Header="{DynamicResource ChannelCode}"/>
+
+
+                            </TreeViewItem>
+
+
+
+
+
+                        </TreeView>
+                    </Grid>
                 </Grid>
             </TabItem>
             <TabItem Header="{DynamicResource Settings}">
