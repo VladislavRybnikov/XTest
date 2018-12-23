@@ -137,31 +137,43 @@
                              x:Name="nameCodings">
 
                         <TreeViewItem Header="Systematic codes">
-                            <TreeViewItem Header="{DynamicResource Abramsone}"/>
-                            <TreeViewItem Header="{DynamicResource BCH}"/>
+
                             <TreeViewItem Header="{DynamicResource Ellieas}"/>
-
-
-                        </TreeViewItem>
-                        <TreeViewItem Header="Сyclic codes">
+                            <TreeViewItem Header="{DynamicResource RidaMallera}"/>
                             <TreeViewItem Header="{DynamicResource DDC}"/>
                             <TreeViewItem Header="{DynamicResource Shenon}"/>
                             <TreeViewItem Header="{DynamicResource Berger}"/>
 
+                        </TreeViewItem>
+                        <TreeViewItem Header="Сyclic codes">
+
+                            <TreeViewItem Header="{DynamicResource Cyclic}"/>
+                            <TreeViewItem Header="{DynamicResource Abramsone}"/>
+                            <TreeViewItem Header="{DynamicResource Faira}"/>
+                            <TreeViewItem Header="{DynamicResource BCH}"/>
+                           
+
 
                         </TreeViewItem>
                         <TreeViewItem Header="Non-binary codes">
-                            <TreeViewItem Header="{DynamicResource Greu}"/>
-                            <TreeViewItem Header="{DynamicResource Cyclic}"/>
-                            <TreeViewItem Header="{DynamicResource Systematic}"/>
+                            <TreeViewItem Header="{DynamicResource EasyReturt}"/>
+                            <TreeViewItem Header="{DynamicResource Iterative}"/>
                             <TreeViewItem Header="{DynamicResource PrimaryNonDouble}"/>
+                            <TreeViewItem Header="{DynamicResource CheckQ}"/>
+                            
+                            
+                            
+                            
 
 
                         </TreeViewItem>
                         <TreeViewItem Header="Other codes">
+                            <TreeViewItem Header="{DynamicResource Greu}"/>
+                          
+                            <TreeViewItem Header="{DynamicResource Systematic}"/>
 
 
-                            <TreeViewItem Header="{DynamicResource CheckQ}"/>
+                            
                             <TreeViewItem Header="{DynamicResource EasyReturt}"/>
                             <TreeViewItem Header="{DynamicResource Iterative}"/>
                             <TreeViewItem Header="{DynamicResource Haffman}"/>
@@ -169,7 +181,7 @@
                             <TreeViewItem Header="{DynamicResource Recurent}"/>
                             <TreeViewItem Header="{DynamicResource Entrophy}"/>
                             <TreeViewItem Header="{DynamicResource ChannelCode}"/>
-
+                            
 
                         </TreeViewItem>
 

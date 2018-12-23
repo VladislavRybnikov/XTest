@@ -8,7 +8,7 @@ namespace Hurricane.XTest.Core.Processors.Encoders
     public class IterativeCoder : IEncoder
     {
         public static Random _random = new Random();
-        private JsonParser<QuestionEntity> _jsonParser;
+        private JsonParser<MatrixQuestionEntity> _jsonParser;
 
         public IQuestionEntity QuestionEntity
         {
@@ -24,8 +24,9 @@ namespace Hurricane.XTest.Core.Processors.Encoders
 
         public IterativeCoder(CodeType codeType)
         {
+            _jsonParser = new JsonParser<MatrixQuestionEntity>();
             CodeType = codeType;
-            _jsonParser = new JsonParser<QuestionEntity>();
+       
         }
 
         private IQuestionEntity Encoder()

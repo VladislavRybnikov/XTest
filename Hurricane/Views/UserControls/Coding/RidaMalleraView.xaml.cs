@@ -22,9 +22,9 @@ using System.Windows.Shapes;
 namespace Hurricane.Views.UserControls.Coding
 {
     /// <summary>
-    /// Логика взаимодействия для HaphmanaView.xaml
+    /// Логика взаимодействия для RidaMalleraView.xaml
     /// </summary>
-    public partial class HaphmanaView : UserControl
+    public partial class RidaMalleraView : UserControl
     {
         private readonly IGenerateProcess _generateProcess;
         private readonly ICollection<IQuestionEntity> _questionEntities;
@@ -33,18 +33,19 @@ namespace Hurricane.Views.UserControls.Coding
         private readonly IAnswerCheker _answerCheker;
         private Grid _grid;
         private List<TextBox> _textAnswer;
+        private List<TextBox> _textQuestions;
 
-        public HaphmanaView(Grid grid
-            
-            )
+        public RidaMalleraView(Grid grid)
         {
             InitializeComponent();
             _grid = grid;
+
             _textAnswer = new List<TextBox>();
+            _textQuestions = new List<TextBox>();
             StaertTest.Click += StaertTest_Click;
             _generateProcess = new GenerateProcess();
             _answerCheker = new AnswerCheker();
-            _questionEntities = _generateProcess.GetQuestions(QuestionType.Haphmana).Data;
+            _questionEntities = _generateProcess.GetQuestions(QuestionType.RidaMallera).Data;
             _currentQuestionEntity = _questionEntities.FirstOrDefault(p => p.StateType == StateType.Default);
             DescriptionText.Text = _currentQuestionEntity?.Description;
             InitMatrix();
@@ -52,23 +53,45 @@ namespace Hurricane.Views.UserControls.Coding
             Correct.Text = $"{_questionEntities.Count(p => p.StateType == StateType.Corect)}/{_questionEntities.Count}";
         }
 
+
         private void StaertTest_Click(object sender, RoutedEventArgs e)
         {
-            StringBuilder sb = new StringBuilder();
 
-            foreach (var s in _textAnswer)
+            MatrixValue matrix = (MatrixValue)_currentQuestionEntity.Question;
+
+
+            string[][] answer = null;
+
+            if (_currentQuestionEntity.CodeType == CodeType.Encoding)
             {
-                sb.Append(s.Text);
+                answer = new string[1][];
+                answer[1] = new string[_textAnswer.Count];
+                for (int i = 0; i < _textAnswer.Count; i++)
+                {
+                    answer[1][i] = _textAnswer[i].Text;
+                }
             }
+            else
+            {
+                answer = new string[_textAnswer.Count][];
+
+                for (int i = 0; i < _textAnswer.Count; i++)
+                {
+                    answer[i] = new string[1];
+                    answer[i][1] = _textAnswer[i].Text;
+                }
+
+            }
+
             StateType stateType = _answerCheker.CheckQuestion(new TestAnswerEntity()
             {
                 AllCount = _questionEntities.Count,
-                Answer = new BaseValue()
+                Answer = new MatrixValue()
                 {
-                    Value = sb.ToString()
+                    Matrix = answer
                 },
                 CurrentCount = number,
-                NameTest = QuestionType.Haphmana.ToString(),
+                NameTest = QuestionType.RidaMallera.ToString(),
                 QuestionEntity = _currentQuestionEntity
             }).Data;
             _currentQuestionEntity = _questionEntities
@@ -116,31 +139,55 @@ namespace Hurricane.Views.UserControls.Coding
                 for (int j = 0; j < matrix.Matrix[i].Length; j++)
                 {
 
-                    if (matrix.Matrix[i][j] != "0")
-                    {
-                        TextBlock textBlock = new TextBlock();
-                        textBlock.IsEnabled = false;
-                        textBlock.Margin = new Thickness(5);
-                        textBlock.FontSize = 17;
-                        textBlock.Text = matrix.Matrix[i][j];
-                        QuestionMatrix.Children.Add(textBlock);
+                    TextBlock textBlock = new TextBlock();
+                    textBlock.IsEnabled = false;
+                    textBlock.Margin = new Thickness(3);
+                    textBlock.FontSize = 12;
+                    textBlock.Text = matrix.Matrix[i][j];
+                    QuestionMatrix.Children.Add(textBlock);
+                    Grid.SetRow(textBlock, i);
+                    Grid.SetColumn(textBlock, j);
+                }
+            }
 
-                        Grid.SetRow(textBlock, i);
-                        Grid.SetColumn(textBlock, j);
+            for (int i = 0; i < matrix.Matrix.Length + 1; i++)
+            {
+                for (int j = 0; j < matrix.Matrix.Length + 1; j++)
+                {
+                    if (_currentQuestionEntity.CodeType == CodeType.Encoding)
+                    {
+                        if (i != j && (matrix.Matrix.Length == i) && matrix.Matrix[0].Length != j)
+                        {
+                            TextBox textBlock = new TextBox();
+
+                            textBlock.Margin = new Thickness(3);
+                            textBlock.FontSize = 12;
+                            textBlock.Text = "0";
+                            QuestionMatrix.Children.Add(textBlock);
+                            _textAnswer.Add(textBlock);
+                            Grid.SetRow(textBlock, i);
+                            Grid.SetColumn(textBlock, j);
+                        }
                     }
                     else
                     {
-                        TextBox textBlock = new TextBox();
-                        textBlock.Margin = new Thickness(5);
-                        textBlock.FontSize = 17;
-                        textBlock.Text = "";
-                        QuestionMatrix.Children.Add(textBlock);
-                        _textAnswer.Add(textBlock);
-                        Grid.SetRow(textBlock, i);
-                        Grid.SetColumn(textBlock, j);
+                        if (i != j && (matrix.Matrix[0].Length == j) && (matrix.Matrix.Length != i))
+                        {
+                            TextBox textBlock = new TextBox();
+
+                            textBlock.Margin = new Thickness(5);
+                            textBlock.FontSize = 17;
+                            textBlock.Text = "0";
+                            QuestionMatrix.Children.Add(textBlock);
+                            _textAnswer.Add(textBlock);
+                            Grid.SetRow(textBlock, i);
+                            Grid.SetColumn(textBlock, j);
+                        }
                     }
                 }
             }
+
+
         }
     }
 }

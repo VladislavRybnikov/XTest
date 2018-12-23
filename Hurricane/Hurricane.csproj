@@ -484,6 +484,12 @@
     <Compile Include="Views\UserControls\Coding\GrayView.xaml.cs">
       <DependentUpon>GrayView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\UserControls\Coding\HaphmanaView.xaml.cs">
+      <DependentUpon>HaphmanaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\Coding\IterativeCoderView.xaml.cs">
+      <DependentUpon>IterativeCoderView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControls\Coding\ModuleCodeQView.xaml.cs">
       <DependentUpon>ModuleCodeQView.xaml</DependentUpon>
     </Compile>
@@ -492,6 +498,9 @@
     </Compile>
     <Compile Include="Views\UserControls\Coding\RecyrentView.xaml.cs">
       <DependentUpon>RecyrentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\Coding\RidaMalleraView.xaml.cs">
+      <DependentUpon>RidaMalleraView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\UserControls\Coding\SystematicHemmingView.xaml.cs">
       <DependentUpon>SystematicHemmingView.xaml</DependentUpon>
@@ -940,6 +949,12 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\UserControls\Coding\HaphmanaView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Coding\IterativeCoderView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\UserControls\Coding\ModuleCodeQView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -950,6 +965,9 @@
     </Page>
     <Page Include="Views\UserControls\Coding\RecyrentView.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Coding\RidaMalleraView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserControls\Coding\SystematicHemmingView.xaml">

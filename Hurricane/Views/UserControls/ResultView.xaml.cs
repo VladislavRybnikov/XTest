@@ -44,7 +44,7 @@ namespace Hurricane.Views.UserControls
         private void StartTest_Click(object sender, RoutedEventArgs e)
         {
             _grid.Children.Clear();
-            _grid.Children.Add(_userControl);
+          ///  _grid.Children.Add(_userControl);
         }
     }
 }

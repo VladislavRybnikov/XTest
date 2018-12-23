@@ -8,7 +8,7 @@ namespace Hurricane.XTest.Core.Processors.Encoders
     public class RidaMalleraCoder : IEncoder
     {
         public static Random _random = new Random();
-        private JsonParser<QuestionEntity> _jsonParser;
+        private JsonParser<MatrixQuestionEntity> _jsonParser;
 
         public IQuestionEntity QuestionEntity
         {
@@ -25,16 +25,16 @@ namespace Hurricane.XTest.Core.Processors.Encoders
         public RidaMalleraCoder(CodeType codeType)
         {
             CodeType = codeType;
-            _jsonParser = new JsonParser<QuestionEntity>();
+            _jsonParser = new JsonParser<MatrixQuestionEntity>();
         }
 
         private IQuestionEntity Encoder()
         {
-            return _jsonParser.GetIQuestionEntity(1, 11, "RidaMalleraCoder");
+            return _jsonParser.GetIQuestionEntity(1, 4, "RidaMalleraCoder");
         }
         private IQuestionEntity Decoder()
         {
-            return _jsonParser.GetIQuestionEntity(11, 21, "RidaMalleraCoder");
+            return _jsonParser.GetIQuestionEntity(4, 7, "RidaMalleraCoder");
         }
     }
 }

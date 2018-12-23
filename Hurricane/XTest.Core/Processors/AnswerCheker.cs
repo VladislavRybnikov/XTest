@@ -4,6 +4,7 @@ using Hurricane.XTest.Core.Abstract;
 using Hurricane.XTest.Core.Abstract.Entities;
 using Hurricane.XTest.Core.Abstract.Entities.Common;
 using Hurricane.XTest.Core.Const.Enums;
+using Hurricane.XTest.Core.Entities;
 using Hurricane.XTest.Core.Entities.Common;
 
 namespace Hurricane.XTest.Core.Processors
@@ -28,14 +29,42 @@ namespace Hurricane.XTest.Core.Processors
 
             bool result = false;
 
-           if (testAnswerEntity.Answer is IMatrixValue)
+           if (testAnswerEntity.Answer is MatrixValue)
             {
                 IMatrixValue matrixValue = testAnswerEntity.Answer as IMatrixValue;
 
                 IMatrixValue answer = testAnswerEntity.QuestionEntity.Answer as IMatrixValue;
 
+                try
+                {
+                    for(int i=0;i < matrixValue.Matrix.Length;i++)
+                    {
+                        for(int j=0;j<matrixValue.Matrix[i].Length;j++)
+                        {
+                            if (matrixValue.Matrix[i][j]== answer.Matrix[i][j])
+                            {
+                                result = true;
+                            }
+                            else
+                            {
+                                result = false;
+                                break;
+                            }
+                        }
+
+                        if(!result)
+                        {
+                            break;
+                        }
+                    }
+
+                }
+                catch
+                {
+                    result = false;
+                }
                 //TODO
-                result =  matrixValue.Matrix.Except(answer.Matrix).Count()==0;
+               // result =  matrixValue.Matrix.Except(answer.Matrix).Count()==0;
             }
             else
             {

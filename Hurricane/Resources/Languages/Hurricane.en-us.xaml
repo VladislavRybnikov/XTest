@@ -29,8 +29,8 @@
     <system:String x:Key="NameTest">Name Test: </system:String>
     <system:String x:Key="NumberQuestions">Number of questions: </system:String>
     <system:String x:Key="NumberCorrectQuestions">Number of correct questions: </system:String>
-    <system:String x:Key="Trynumber">Try number: </system:String>
-    <system:String x:Key="NewTest">New Test:</system:String>
+    <system:String x:Key="Trynumber">Number of attempts: </system:String>
+    <system:String x:Key="NewTest">New Test</system:String>
 
 
     <system:String x:Key="Abramsone">Abramson</system:String>
@@ -395,7 +395,7 @@
     <system:String x:Key="Shenon">Shenon</system:String>
     <system:String x:Key="Berger">Berger</system:String>
     <system:String x:Key="Greu">Greu</system:String>
-    <system:String x:Key="Cyclic">Cyclic</system:String>
+    <system:String x:Key="Cyclic">CyclicHemming</system:String>
     <system:String x:Key="Systematic">Systematic</system:String>
     <system:String x:Key="PrimaryNonDouble">PrimaryNonDouble</system:String>
     <system:String x:Key="CheckQ">CheckQ</system:String>
@@ -407,7 +407,10 @@
     <system:String x:Key="Entrophy">Entrophy</system:String>
     <system:String x:Key="ChannelCode">ChannelCode</system:String>
     <system:String x:Key="Ellieas">Ellieas</system:String>
-    
-   
+    <system:String x:Key="Faira">Faira</system:String>
+    <system:String x:Key="RidaMallera">Code Rida-Mallera</system:String>
+
+
+
 
 </ResourceDictionary>

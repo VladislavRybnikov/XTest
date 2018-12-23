@@ -28,13 +28,6 @@ namespace Hurricane.XTest.Core.Processors.Encoders
             _jsonParser = new JsonParser<QuestionEntity>();
         }
 
-       private int GetRandom()
-        {
-            Random random = new Random();
-            int number = random.Next(100, 999999999);
-            return number;
-        }
-
         private IQuestionEntity Encoder()
         {
             return _jsonParser.GetIQuestionEntity(1, 11, "FairaCoder");
