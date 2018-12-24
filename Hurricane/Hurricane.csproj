@@ -457,6 +457,9 @@
     <Compile Include="Views\UserControls\Coding\AbramsoneView.xaml.cs">
       <DependentUpon>AbramsoneView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\UserControls\Coding\AbramsoneViewTeory.xaml.cs">
+      <DependentUpon>AbramsoneViewTeory.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControls\Coding\BaseView.xaml.cs">
       <DependentUpon>BaseView.xaml</DependentUpon>
     </Compile>
@@ -528,6 +531,15 @@
     </Compile>
     <Compile Include="Views\UpdateWindow.xaml.cs">
       <DependentUpon>UpdateWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\TeoryView.xaml.cs">
+      <DependentUpon>TeoryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\Teory\AbramsoneTeory.xaml.cs">
+      <DependentUpon>AbramsoneTeory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\Test.xaml.cs">
+      <DependentUpon>Test.xaml</DependentUpon>
     </Compile>
     <Compile Include="XTest.Core\Abstract\Entities\Common\IDataResult.cs" />
     <Compile Include="XTest.Core\Abstract\Entities\Common\IResult.cs" />
@@ -915,6 +927,10 @@
     <Page Include="Views\UserControls\Coding\AbramsoneView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\UserControls\Coding\AbramsoneViewTeory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\UserControls\Coding\BaseView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -1002,6 +1018,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UpdateWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\TeoryView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Teory\AbramsoneTeory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Test.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

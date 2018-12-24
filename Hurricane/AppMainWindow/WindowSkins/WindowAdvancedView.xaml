@@ -416,6 +416,7 @@
                     </Grid>
                 </Grid>
             </TabItem>
+            
             <TabItem Header="{DynamicResource Settings}">
                 <TabControl Margin="0,-2,0,0"
                             Padding="0"
@@ -436,8 +437,9 @@
                     </TabItem>
                 </TabControl>
             </TabItem>
+            
             <TabItem Header="{DynamicResource Teory}">
-
+                <userControls:TeoryView></userControls:TeoryView>
             </TabItem>
             <TabItem Header="Online" Visibility="Collapsed">
                 <Grid>
