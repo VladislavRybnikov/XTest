@@ -236,7 +236,7 @@
     <system:String x:Key="Berger">Бергера</system:String>
     <system:String x:Key="Greu">Грея</system:String>
     <system:String x:Key="Cyclic">Циклічний код</system:String>
-    <system:String x:Key="Systematic">Систематичний</system:String>
+    <system:String x:Key="Systematic">Систематичний код</system:String>
     <system:String x:Key="PrimaryNonDouble">Первичні недвоїчні</system:String>
     <system:String x:Key="CheckQ">Перевірка по модулю q</system:String>
     <system:String x:Key="EasyReturt">Код з простим повторенням</system:String>
@@ -252,6 +252,7 @@
     <system:String x:Key="Ellieas">Елайса</system:String>
     <system:String x:Key="ExampleCoding">Приклад кодування</system:String>
     <system:String x:Key="ExampleDecoding">Приклад декодування</system:String>
+
     <system:String x:Key="Decoding">
         Декодування
     </system:String>

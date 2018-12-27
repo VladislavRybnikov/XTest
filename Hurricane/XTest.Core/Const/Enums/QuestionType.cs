@@ -2,6 +2,7 @@
 {
     public enum QuestionType
     {
+        Deffoult,
         Ellieas,
         Varshamova,
         Abramson, 
