@@ -24,5 +24,6 @@ namespace Hurricane.Views.UserControls.Teory
         {
             InitializeComponent();
         }
+       
     }
 }

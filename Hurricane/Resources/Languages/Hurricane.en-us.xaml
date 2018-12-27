@@ -650,4 +650,44 @@
          Rejecting the test part, we get the final result - 0111111111.
 
     </system:String>
+
+    <system:String x:Key="BCHTeory">
+        BCH codes. Brief theoretical information.
+
+   BCH codes developed by Bose, Chowdhury and Hokvinhem allow you to detect and correct any number of errors. The coding values ??specified are: the number of errors s, which should be corrected, and the total number of characters sent to the line, i.e. word length n. The number of information characters (k) and control characters (m), as well as the composition of the control characters are to be determined.
+
+Coding
+
+1 Select word length. When encoding using the BCH method, one cannot choose arbitrarily the length of the word n. The first limitation is that a word can have only an odd number of characters. It is necessary that the equality be satisfied: 2h - 1 = n, where h is an integer.
+2 Determination of code distance d. d = 2s + 1. /n \n
+3 Definition of the generating polynomial P (X). The generator polynomial is the smallest multiple (LCN) of the so-called minimal polynomial M (X) up to order 2s-1 inclusive. Moreover, the generator polynomial is composed of the product of a certain number of odd minimal polynomials P (X) = LCM [M1 (X) · M3 (X) · ... · M2s-1 (X)]. (1) Minimal polynomials are simple irreducible polynomials. Note that if among the minimal polynomials there are two identical ones, then one of them is excluded.
+4 Determination of the number of minimal polynomials (L). From paragraph 3 it follows that the order of the minimum polynomials is defined as 2s-1. It can be shown that the number of minimal polynomials is equal to the number of corrected errors, i.e. L = s.
+5 Definition of the highest degree l of the minimal polynomial. The degree of l is the smallest integer such that 2 - 1 is divisible by n. This means that l = h.
+6 Selection of minimal polynomials. When the number of minimal polynomials L and the degree of the senior polynomial l is determined, the polynomials are written out from table 1.
+7 Determination of the degree b of the generating polynomial P (X). The degree of the generating polynomial does not exceed the product of l · s or L · s. Depending on the LCM, the degree of P (X) may be less than b
+        &lt;= l · s. After finding all the minimal polynomials, the generator polynomial is found by equation (1).
+8 Determine the number of control characters. Since the number of control symbols m is equal to the degree of the generating polynomial, for the code of length n, b = m &lt;= l · s.
+9 The determination of the number of information symbols is made from the equality k = n - m.
+10 Calculation of the encoded message. The coded message F (X) can be obtained in two ways:
+F (X) = Q (X) · P (X), where P (X) is the generator polynomial, and Q (X) is obtained as follows:
+(x ^ m) * G (x) / P (x) = Q (x) + R (x) / P (x)
+where G (X) is the combination that needs to be encoded;
+      R (X) is the remainder of the division.
+F (X) = xm · G (X) + R (X).
+Coding Example
+
+    It is necessary to encode the message with the possibility of correcting 2 errors so that 15 bits are transmitted to the data transmission channel (n = 15, h = 4).
+
+    The code distance is d = 2s + 1 = 5.
+
+    2 minimal polynomials will be used. The highest degree of the minimal polynomial is 4.
+
+    We use the minimal polynomials 10011 and 1011.
+
+    Then the generator polynomial is equal to 10011 · 1011 = 10101101, i.e. of the 15 bits of code 7 will be verifiable.
+
+    The encoding of a specific message by the BCH code does not differ from the encoding by other cyclic codes. An example of obtaining an encoded combination from the original message and the forming polynomial can be found, for example, in theoretical information about the Fire code.
+    </system:String>
+    
+    
 </ResourceDictionary>

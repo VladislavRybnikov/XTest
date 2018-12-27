@@ -538,6 +538,18 @@
     <Compile Include="Views\UserControls\Teory\AbramsoneTeory.xaml.cs">
       <DependentUpon>AbramsoneTeory.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\UserControls\Teory\BCHTeory.xaml.cs">
+      <DependentUpon>BCHTeory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\Teory\BergeraTeory.xaml.cs">
+      <DependentUpon>BergeraTeory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\Teory\DDKTeory.xaml.cs">
+      <DependentUpon>DDKTeory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\Teory\EllieasTeory.xaml.cs">
+      <DependentUpon>EllieasTeory.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControls\Test.xaml.cs">
       <DependentUpon>Test.xaml</DependentUpon>
     </Compile>
@@ -569,6 +581,7 @@
     <Compile Include="XTest.Core\Entities\QuestionEntity.cs" />
     <Compile Include="XTest.Core\Entities\TestAnswerEntity.cs" />
     <Compile Include="XTest.Core\Entities\TestEntity.cs" />
+    <Compile Include="XTest.Core\Holders\LanguageHolder.cs" />
     <Compile Include="XTest.Core\Holders\Testholder.cs" />
     <Compile Include="XTest.Core\Processors\AnswerCheker.cs" />
     <Compile Include="XTest.Core\Processors\Encoders\AbramsonCoder.cs" />
@@ -1026,6 +1039,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserControls\Teory\AbramsoneTeory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Teory\BCHTeory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Teory\BergeraTeory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Teory\DDKTeory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Teory\EllieasTeory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -321,7 +321,20 @@ namespace Hurricane.ViewModels
                 if (SetProperty(value, ref _currentlanguage) && value != null)
                 {
                     Config.Language = value.Code;
+                    if (value.Code == "ru")
+                    {
+                        XTest.Core.Holders.LanguageHolder.Lan = "rus";
+                    }
+                    else if (value.Code == "fi")
+                    {
+                        XTest.Core.Holders.LanguageHolder.Lan = "ua";
+                    }
+                    else if (value.Code == "en")
+                    {
+                        XTest.Core.Holders.LanguageHolder.Lan = "eng";
+                    }
                     Config.LoadLanguage();
+                    
                 }
             }
         }

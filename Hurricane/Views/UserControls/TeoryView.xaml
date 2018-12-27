@@ -40,6 +40,9 @@
         <ListBox Background="Transparent" SelectedIndex="{Binding SelectedTab}">
             <ListBoxItem Content="{DynamicResource Abramsone}"/>
             <ListBoxItem Content="{DynamicResource BCH}"/>
+            <ListBoxItem Content="{DynamicResource Ellieas}" />
+            <ListBoxItem Content="{DynamicResource Berger}"/>
+            <ListBoxItem Content="{DynamicResource DDC}"/>
 
         </ListBox>
         <TabControl x:Name="TabControl"
@@ -53,8 +56,17 @@
             <TabItem Header="{DynamicResource Abramsone}">
                 <userControls:AbramsoneTeory/>
             </TabItem>
-            <TabItem Header="{DynamicResource BCH}">
-                <TextBlock Text="vgbhjmk"/>
+            <TabItem x:Name="BCH">
+                <userControls:BCHTeory/>
+            </TabItem>
+            <TabItem Header="{DynamicResource Ellieas}">
+                <userControls:EllieasTeory/>
+            </TabItem>
+            <TabItem Header="{DynamicResource Berger}">
+                <userControls:BergeraTeory/>
+            </TabItem>
+            <TabItem Header="{DynamicResource DDC}">
+                <userControls:DDKTeory/>
             </TabItem>
         </TabControl>
     </Grid>
