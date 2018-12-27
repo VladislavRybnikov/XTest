@@ -227,6 +227,7 @@
     <system:String x:Key="AppTheme">Тема додатка</system:String>
     <system:String x:Key="KeyboardShortcuts">Гарячі клавіші</system:String>
     <system:String x:Key="DDC">ДДК</system:String>
+    <system:String x:Key="Faira">Файра</system:String>
     <system:String x:Key="AccentColorString">Колір</system:String>
     <system:String x:Key="View">Інтерфейс</system:String>
     <system:String x:Key="UseThinHeaders">Вузькі заголовки</system:String>
@@ -234,12 +235,13 @@
     <system:String x:Key="Shenon">Шенона-Фано</system:String>
     <system:String x:Key="Berger">Бергера</system:String>
     <system:String x:Key="Greu">Грея</system:String>
-    <system:String x:Key="Cyclic">Циклічний</system:String>
+    <system:String x:Key="Cyclic">Циклічний код</system:String>
     <system:String x:Key="Systematic">Систематичний</system:String>
     <system:String x:Key="PrimaryNonDouble">Первичні недвоїчні</system:String>
     <system:String x:Key="CheckQ">Перевірка по модулю q</system:String>
     <system:String x:Key="EasyReturt">Код з простим повторенням</system:String>
-    <system:String x:Key="Iterative">Ітеративний</system:String>
+    <system:String x:Key="Iterative">Ітеративний код</system:String>
+    <system:String x:Key="RidaMallera">Ріда Маллєра</system:String>
     <system:String x:Key="Haffman">Хаффмена</system:String>
     <system:String x:Key="Satellite">Коди супутників</system:String>
     <system:String x:Key="Recurent">Рекурентний код</system:String>
@@ -247,6 +249,7 @@
     <system:String x:Key="ChannelCode">Канальні коди</system:String>
     <system:String x:Key="BaseStartTest">Розпочати</system:String>
     <system:String x:Key="NextTest">Далі</system:String>
+    <system:String x:Key="Ellieas">Елайса</system:String>
     <system:String x:Key="ExampleCoding">Приклад кодування</system:String>
     <system:String x:Key="ExampleDecoding">Приклад декодування</system:String>
     <system:String x:Key="Decoding">

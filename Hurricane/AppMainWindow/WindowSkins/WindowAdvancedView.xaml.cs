@@ -45,15 +45,14 @@ namespace Hurricane.AppMainWindow.WindowSkins
         {
             TreeView treeView = (TreeView)sender;
             TreeViewItem treeViewItem = (TreeViewItem)treeView.SelectedItem;
+
             if (treeViewItem.Items.Count==0)
             {
                 string str = (string)treeViewItem.Header;
                 BaseView baseView = new BaseView(str, BaseViewGrid);
                 BaseViewGrid.Children.Clear();
                 BaseViewGrid.Children.Add(baseView);
-            }
-
-         
+            }         
         }
 
         private void NameCodings_SelectionChanged(object sender, SelectionChangedEventArgs e)

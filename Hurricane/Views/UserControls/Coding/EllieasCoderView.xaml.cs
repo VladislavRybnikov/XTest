@@ -66,7 +66,7 @@ namespace Hurricane.Views.UserControls.Coding
                     Value = sb.ToString()
                 },
                 CurrentCount = number,
-                NameTest = QuestionType.Abramson.ToString(),
+                NameTest = QuestionType.Ellieas.ToString(),
                 QuestionEntity = _currentQuestionEntity
             }).Data;
             _currentQuestionEntity = _questionEntities

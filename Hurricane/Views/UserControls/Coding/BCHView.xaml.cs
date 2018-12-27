@@ -32,11 +32,13 @@ namespace Hurricane.Views.UserControls.Coding
         private int number = 1;
         private readonly IAnswerCheker _answerCheker;
         private Grid _grid;
+        private string _coding;
 
-        public BCHView(Grid grid)
+        public BCHView(Grid grid,string coding)
         {
             InitializeComponent();
             _grid = grid;
+            _coding = coding;
             StaertTest.Click += StaertTest_Click;
             _generateProcess = new GenerateProcess();
             _answerCheker = new AnswerCheker();

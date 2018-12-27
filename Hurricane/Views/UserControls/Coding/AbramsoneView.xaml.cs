@@ -32,11 +32,13 @@ namespace Hurricane.Views.UserControls.Coding
         private int number=1;
         private readonly IAnswerCheker _answerCheker;
         private Grid _grid;
+        private string _coding;
 
-        public AbramsoneView(Grid grid)
+        public AbramsoneView(Grid grid,string coding)
         {
             InitializeComponent();
             _grid = grid;
+            _coding = coding;
             StaertTest.Click += StaertTest_Click;
             _generateProcess = new GenerateProcess();
             _answerCheker = new AnswerCheker();
@@ -58,7 +60,7 @@ namespace Hurricane.Views.UserControls.Coding
                     Value = Answer.Text
                 },
                 CurrentCount = number,
-                NameTest = QuestionType.Abramson.ToString(),
+                NameTest = _coding,
                 QuestionEntity = _currentQuestionEntity
             }).Data;
             _currentQuestionEntity = _questionEntities
