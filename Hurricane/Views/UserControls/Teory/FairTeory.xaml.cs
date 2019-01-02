@@ -18,19 +18,19 @@ using System.Windows.Shapes;
 namespace Hurricane.Views.UserControls.Teory
 {
     /// <summary>
-    /// Логика взаимодействия для DDKTeory.xaml
+    /// Логика взаимодействия для FairTeory.xaml
     /// </summary>
-    public partial class DDKTeory : UserControl
+    public partial class FairTeory : UserControl
     {
-        public DDKTeory()
+        public FairTeory()
         {
             InitializeComponent();
-            this.Loaded += DDKTeory_Loaded;
+            this.Loaded += FairTeory_Loaded;
         }
 
-        private void DDKTeory_Loaded(object sender, RoutedEventArgs e)
+        private void FairTeory_Loaded(object sender, RoutedEventArgs e)
         {
-            using (StreamReader sr = new StreamReader($@"Teory\Textovki\DDK\{LanguageHolder.Lan}.txt"))
+            using (StreamReader sr = new StreamReader($@"Teory\Textovki\Fair\{LanguageHolder.Lan}.txt"))
             {
                 Ter.Text = sr.ReadToEnd();
             }

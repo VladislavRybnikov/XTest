@@ -18,19 +18,19 @@ using System.Windows.Shapes;
 namespace Hurricane.Views.UserControls.Teory
 {
     /// <summary>
-    /// Логика взаимодействия для DDKTeory.xaml
+    /// Логика взаимодействия для Kil_t_informatTeory.xaml
     /// </summary>
-    public partial class DDKTeory : UserControl
+    public partial class Kil_t_informatTeory : UserControl
     {
-        public DDKTeory()
+        public Kil_t_informatTeory()
         {
             InitializeComponent();
-            this.Loaded += DDKTeory_Loaded;
+            this.Loaded += Kil_t_informatTeory_Loaded;
         }
 
-        private void DDKTeory_Loaded(object sender, RoutedEventArgs e)
+        private void Kil_t_informatTeory_Loaded(object sender, RoutedEventArgs e)
         {
-            using (StreamReader sr = new StreamReader($@"Teory\Textovki\DDK\{LanguageHolder.Lan}.txt"))
+            using (StreamReader sr = new StreamReader($@"Teory\Textovki\Kil-t informat\{LanguageHolder.Lan}.txt"))
             {
                 Ter.Text = sr.ReadToEnd();
             }

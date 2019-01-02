@@ -31,11 +31,12 @@ namespace Hurricane.XTest.Core.Processors.Encoders
 
         private IQuestionEntity Encoder()
         {
-            return _jsonParser.GetIQuestionEntity(1, 2, "HaphmanaCoder");
+            return _jsonParser.GetIQuestionEntity(1, 9, "HaphmanaCoder");
         }
         private IQuestionEntity Decoder()
         {
-            return _jsonParser.GetIQuestionEntity(1, 2, "HaphmanaCoder");
+            JsonParser<MatrixQuestionEntity>.SaveList.Clear();
+            return _jsonParser.GetIQuestionEntity(1, 9, "HaphmanaCoder");
         }
     }
 }

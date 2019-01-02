@@ -31,8 +31,7 @@ namespace Hurricane.Views.UserControls
             _userControl = _userControl;
             StartTest.Click += StartTest_Click;
             NameTest.Text += MainHistoryEntity.CodingHistorys.Last().NameTest;
-            NumberQuestions.Text += MainHistoryEntity.CodingHistorys.Last()
-                .TestHistorys.Last().AnswerHistorys.Count;
+            NumberQuestions.Text += 10;
             NumberCorrectQuestions.Text +=
                 MainHistoryEntity.CodingHistorys.Last()
                 .TestHistorys.Last().AnswerHistorys.Count(p=>p.IsCorrect);

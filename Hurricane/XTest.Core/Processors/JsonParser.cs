@@ -1,6 +1,7 @@
 ﻿using Exceptionless.Json;
 using Hurricane.XTest.Core.Abstract.Entities;
 using Hurricane.XTest.Core.Entities;
+using Hurricane.XTest.Core.Holders;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -19,16 +20,21 @@ namespace Hurricane.XTest.Core.Processors
         {
             int value = 1;
 
-            //do
-            //{
+            if(SaveList.Count== end-start)
+            {
+                SaveList.RemoveAt(0);
+            }
 
-            //    value = _random.Next(start, end);
-            //}
-            //while (SaveList.Contains(value));
+            do
+            {
 
-            // SaveList.Add(value);
+                value = _random.Next(start, end);
+            }
+            while (SaveList.Contains(value));
+
+            SaveList.Add(value);
             string path = Path.Combine(GenerateProcess.BasePath,
-                name, value + ".json");
+                 LanguageHolder.Lan, name, value + ".json");
 
             using (StreamReader st = new StreamReader(path, Encoding.UTF8))
             {

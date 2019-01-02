@@ -31,6 +31,13 @@
     <system:String x:Key="NumberCorrectQuestions">Number of correct questions: </system:String>
     <system:String x:Key="Trynumber">Number of attempts: </system:String>
     <system:String x:Key="NewTest">New Test</system:String>
+    <system:String x:Key="BestMark">The Best Mark:</system:String>
+    <system:String x:Key="Varshamov">Varshamov</system:String>
+    <system:String x:Key="Faira">Faira</system:String>
+
+
+    <system:String x:Key="Hemming">Hemming</system:String>
+    <system:String x:Key="CurrentDate">Current date of the test:</system:String>
 
 
     <system:String x:Key="Abramsone">Abramson</system:String>
@@ -407,13 +414,15 @@
     <system:String x:Key="Entrophy">Entrophy</system:String>
     <system:String x:Key="ChannelCode">ChannelCode</system:String>
     <system:String x:Key="Ellieas">Ellieas</system:String>
-    <system:String x:Key="Faira">Faira</system:String>
+    <system:String x:Key="SystematicCodes">Systematic Codes</system:String>
     <system:String x:Key="RidaMallera">RidaMallera</system:String>
-    
+    <system:String x:Key="NonbinaryCodes">Non-binary codes</system:String>
+    <system:String x:Key="СyclicCode">Сyclic code</system:String>
     <system:String x:Key="AbramsoneTitle">Abramson codes. Brief theoretical information.</system:String>
     <system:String x:Key="CodingAbramsone">Coding</system:String>
     <system:String x:Key="ExampleCoding">Example Coding</system:String>
     <system:String x:Key="ExampleDecoding">Example Decoding</system:String>
+    <system:String x:Key="OtherCodes">Other codes</system:String>
     <system:String x:Key="DashedLine">
         -----------
     </system:String>

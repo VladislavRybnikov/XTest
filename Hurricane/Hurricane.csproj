@@ -535,21 +535,23 @@
     <Compile Include="Views\UserControls\TeoryView.xaml.cs">
       <DependentUpon>TeoryView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\UserControls\Teory\AbramsoneTeory.xaml.cs">
-      <DependentUpon>AbramsoneTeory.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\UserControls\Teory\BCHTeory.xaml.cs">
-      <DependentUpon>BCHTeory.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\UserControls\Teory\BergeraTeory.xaml.cs">
-      <DependentUpon>BergeraTeory.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\UserControls\Teory\DDKTeory.xaml.cs">
-      <DependentUpon>DDKTeory.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\UserControls\Teory\EllieasTeory.xaml.cs">
-      <DependentUpon>EllieasTeory.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Views\UserControls\Teory\AbramsoneTeory.xaml.cs" />
+    <Compile Include="Views\UserControls\Teory\BCHTeory.xaml.cs" />
+    <Compile Include="Views\UserControls\Teory\BergeraTeory.xaml.cs" />
+    <Compile Include="Views\UserControls\Teory\DDKTeory.xaml.cs" />
+    <Compile Include="Views\UserControls\Teory\EllieasTeory.xaml.cs" />
+    <Compile Include="Views\UserControls\Teory\FairTeory.xaml.cs" />
+    <Compile Include="Views\UserControls\Teory\GreyTeory.xaml.cs" />
+    <Compile Include="Views\UserControls\Teory\HaffmanTeory.xaml.cs" />
+    <Compile Include="Views\UserControls\Teory\HemmingTeory.xaml.cs" />
+    <Compile Include="Views\UserControls\Teory\IteractiveTeory.xaml.cs" />
+    <Compile Include="Views\UserControls\Teory\Kil_t_informatTeory.xaml.cs" />
+    <Compile Include="Views\UserControls\Teory\ProstePovtorenTeory.xaml.cs" />
+    <Compile Include="Views\UserControls\Teory\RekurentTeory.xaml.cs" />
+    <Compile Include="Views\UserControls\Teory\Rid_MalleraTeory.xaml.cs" />
+    <Compile Include="Views\UserControls\Teory\ShenonFanno.xaml.cs" />
+    <Compile Include="Views\UserControls\Teory\SuputnikTeory.xaml.cs" />
+    <Compile Include="Views\UserControls\Teory\VarshamovTeory.xaml.cs" />
     <Compile Include="Views\UserControls\Test.xaml.cs">
       <DependentUpon>Test.xaml</DependentUpon>
     </Compile>
@@ -1039,23 +1041,54 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserControls\Teory\AbramsoneTeory.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserControls\Teory\BCHTeory.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserControls\Teory\BergeraTeory.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserControls\Teory\DDKTeory.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserControls\Teory\EllieasTeory.xaml">
-      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Teory\FairTeory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Teory\GreyTeory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Teory\HaffmanTeory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Teory\HemmingTeory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Teory\IteractiveTeory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Teory\Kil_t_informatTeory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Teory\ProstePovtorenTeory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Teory\RekurentTeory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Teory\Rid_MalleraTeory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Teory\ShenonFanno.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Teory\SuputnikTeory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\Teory\VarshamovTeory.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserControls\Test.xaml">

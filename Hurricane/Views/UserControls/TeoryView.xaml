@@ -30,7 +30,7 @@
         <Style TargetType="TextBlock">
             <Setter Property="Foreground" Value="{DynamicResource BlackBrush}" />
         </Style>
-        
+
     </UserControl.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
@@ -43,7 +43,18 @@
             <ListBoxItem Content="{DynamicResource Ellieas}" />
             <ListBoxItem Content="{DynamicResource Berger}"/>
             <ListBoxItem Content="{DynamicResource DDC}"/>
-
+            <ListBoxItem Content="{DynamicResource Faira}"/>
+            <ListBoxItem Content="{DynamicResource Greu}"/>
+            <ListBoxItem Content="{DynamicResource Haffman}"/>
+            <ListBoxItem Content="{DynamicResource Hemming}"/>
+            <ListBoxItem Content="{DynamicResource Iterative}"/>
+            <ListBoxItem Content="{DynamicResource Entrophy}"/>
+            <ListBoxItem Content="{DynamicResource EasyReturt}"/>
+            <ListBoxItem Content="{DynamicResource Recurent}"/>
+            <ListBoxItem Content="{DynamicResource RidaMallera}"/>
+            <ListBoxItem Content="{DynamicResource Shenon}"/>
+            <ListBoxItem Content="{DynamicResource Satellite}"/>
+            <ListBoxItem Content="{DynamicResource Varshamov}"/>
         </ListBox>
         <TabControl x:Name="TabControl"
                     Grid.Column="1"
@@ -56,6 +67,7 @@
             <TabItem Header="{DynamicResource Abramsone}">
                 <userControls:AbramsoneTeory/>
             </TabItem>
+
             <TabItem x:Name="BCH">
                 <userControls:BCHTeory/>
             </TabItem>
@@ -67,6 +79,42 @@
             </TabItem>
             <TabItem Header="{DynamicResource DDC}">
                 <userControls:DDKTeory/>
+            </TabItem>
+            <TabItem Header="{DynamicResource Fair}">
+                <userControls:FairTeory/>
+            </TabItem>
+            <TabItem Header="{DynamicResource Greu}">
+                <userControls:GreyTeory/>
+            </TabItem>
+            <TabItem Header="{DynamicResource Haffman}">
+                <userControls:HaffmanTeory/>
+            </TabItem>
+            <TabItem Header="{DynamicResource Hemming}">
+                <userControls:HemmingTeory/>
+            </TabItem>
+            <TabItem Header="{DynamicResource Iterative}">
+                <userControls:IteractiveTeory/>
+            </TabItem>
+            <TabItem Header="{DynamicResource Entrophy}">
+                <userControls:Kil_t_informatTeory/>
+            </TabItem>
+            <TabItem Header="{DynamicResource EasyReturt}">
+                <userControls:ProstePovtorenTeory/>
+            </TabItem>
+            <TabItem Header="{DynamicResource Recurent}">
+                <userControls:RekurentTeory/>
+            </TabItem>
+            <TabItem Header="{DynamicResource RidaMallera}">
+                <userControls:Rid_MalleraTeory/>
+            </TabItem>
+            <TabItem Header="{DynamicResource Shenon}">
+                <userControls:ShenonFanno/>
+            </TabItem>
+            <TabItem Header="{DynamicResource Satellite}">
+                <userControls:SuputnikTeory/>
+            </TabItem>
+            <TabItem Header="{DynamicResource Varshamov}">
+                <userControls:VarshamovTeory/>
             </TabItem>
         </TabControl>
     </Grid>

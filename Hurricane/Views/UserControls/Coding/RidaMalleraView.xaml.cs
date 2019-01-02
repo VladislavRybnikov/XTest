@@ -64,22 +64,30 @@ namespace Hurricane.Views.UserControls.Coding
 
             if (_currentQuestionEntity.CodeType == CodeType.Encoding)
             {
-                answer = new string[1][];
-                answer[1] = new string[_textAnswer.Count];
-                for (int i = 0; i < _textAnswer.Count; i++)
+                try
                 {
-                    answer[1][i] = _textAnswer[i].Text;
+                    answer = new string[1][];
+                    answer[1] = new string[_textAnswer.Count];
+                    for (int i = 0; i < _textAnswer.Count; i++)
+                    {
+                        answer[1][i] = _textAnswer[i].Text;
+                    }
                 }
+                catch { }
             }
             else
             {
-                answer = new string[_textAnswer.Count][];
-
-                for (int i = 0; i < _textAnswer.Count; i++)
+                try
                 {
-                    answer[i] = new string[1];
-                    answer[i][1] = _textAnswer[i].Text;
+                    answer = new string[_textAnswer.Count][];
+
+                    for (int i = 0; i < _textAnswer.Count; i++)
+                    {
+                        answer[i] = new string[1];
+                        answer[i][1] = _textAnswer[i].Text;
+                    }
                 }
+                catch { }
 
             }
 

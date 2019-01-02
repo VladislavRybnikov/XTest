@@ -18,19 +18,19 @@ using System.Windows.Shapes;
 namespace Hurricane.Views.UserControls.Teory
 {
     /// <summary>
-    /// Логика взаимодействия для DDKTeory.xaml
+    /// Логика взаимодействия для VarshamovTeory.xaml
     /// </summary>
-    public partial class DDKTeory : UserControl
+    public partial class VarshamovTeory : UserControl
     {
-        public DDKTeory()
+        public VarshamovTeory()
         {
             InitializeComponent();
-            this.Loaded += DDKTeory_Loaded;
+            this.Loaded += VarshamovTeory_Loaded;
         }
 
-        private void DDKTeory_Loaded(object sender, RoutedEventArgs e)
+        private void VarshamovTeory_Loaded(object sender, RoutedEventArgs e)
         {
-            using (StreamReader sr = new StreamReader($@"Teory\Textovki\DDK\{LanguageHolder.Lan}.txt"))
+            using (StreamReader sr = new StreamReader($@"Teory\Textovki\Suputnik\{LanguageHolder.Lan}.txt"))
             {
                 Ter.Text = sr.ReadToEnd();
             }

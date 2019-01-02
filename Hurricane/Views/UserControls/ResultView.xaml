@@ -42,7 +42,7 @@
                    FontSize="16"></TextBlock>
         <TextBlock Grid.Row="5"  x:Name="TryNumber" Text="{DynamicResource Trynumber}" VerticalAlignment="Bottom" HorizontalAlignment="Center"
                    FontSize="16"></TextBlock>
-        <Button Grid.Row="6" x:Name="StartTest" Background="LawnGreen" Width="110" Content="{DynamicResource NewTest}" VerticalAlignment="Center" HorizontalAlignment="Center"
+        <Button Visibility="Hidden" Grid.Row="6" x:Name="StartTest" Background="LawnGreen" Width="110" Content="{DynamicResource NewTest}" VerticalAlignment="Center" HorizontalAlignment="Center"
                    FontSize="16"></Button>
     </Grid>
 </UserControl>

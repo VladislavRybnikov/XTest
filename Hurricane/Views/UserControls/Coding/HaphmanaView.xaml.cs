@@ -93,9 +93,11 @@ namespace Hurricane.Views.UserControls.Coding
         private void InitMatrix()
         {
             MatrixValue matrix = (MatrixValue)_currentQuestionEntity.Question;
+            MatrixValue ans = (MatrixValue)_currentQuestionEntity.Answer;
+
             if (QuestionMatrix.Children.Count == 0)
             {
-                for (int i = 0; i < matrix.Matrix.Length + 1; i++)
+                for (int i = 0; i < matrix.Matrix.Length + 2; i++)
                 {
                     QuestionMatrix.RowDefinitions.Add(new RowDefinition()
                     { Height = new GridLength(1, GridUnitType.Star) });
@@ -126,7 +128,7 @@ namespace Hurricane.Views.UserControls.Coding
                         QuestionMatrix.Children.Add(textBlock);
 
                         Grid.SetRow(textBlock, i);
-                        Grid.SetColumn(textBlock, j);
+                        Grid.SetColumn(textBlock, j+1);
                     }
                     else
                     {
@@ -137,10 +139,25 @@ namespace Hurricane.Views.UserControls.Coding
                         QuestionMatrix.Children.Add(textBlock);
                         _textAnswer.Add(textBlock);
                         Grid.SetRow(textBlock, i);
-                        Grid.SetColumn(textBlock, j);
+                        Grid.SetColumn(textBlock, j+1);
                     }
                 }
             }
+
+            //if(ans.Matrix[1].Length==1)
+            //{
+            //    for (int i = 0; i < matrix.Matrix.Length; i++)
+            //    {
+            //        TextBox textBlock = new TextBox();
+            //        textBlock.Margin = new Thickness(5);
+            //        textBlock.FontSize = 17;
+            //        textBlock.Text = "";
+            //        QuestionMatrix.Children.Add(textBlock);
+            //        _textAnswer.Add(textBlock);
+            //        Grid.SetRow(textBlock, i);
+            //        Grid.SetColumn(textBlock, 0);
+            //    }
+            // }
         }
     }
 }

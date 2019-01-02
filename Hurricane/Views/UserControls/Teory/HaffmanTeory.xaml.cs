@@ -18,19 +18,19 @@ using System.Windows.Shapes;
 namespace Hurricane.Views.UserControls.Teory
 {
     /// <summary>
-    /// Логика взаимодействия для DDKTeory.xaml
+    /// Логика взаимодействия для HaffmanTeory.xaml
     /// </summary>
-    public partial class DDKTeory : UserControl
+    public partial class HaffmanTeory : UserControl
     {
-        public DDKTeory()
+        public HaffmanTeory()
         {
             InitializeComponent();
-            this.Loaded += DDKTeory_Loaded;
+            this.Loaded += HaffmanTeory_Loaded;
         }
 
-        private void DDKTeory_Loaded(object sender, RoutedEventArgs e)
+        private void HaffmanTeory_Loaded(object sender, RoutedEventArgs e)
         {
-            using (StreamReader sr = new StreamReader($@"Teory\Textovki\DDK\{LanguageHolder.Lan}.txt"))
+            using (StreamReader sr = new StreamReader($@"Teory\Textovki\Haffman\{LanguageHolder.Lan}.txt"))
             {
                 Ter.Text = sr.ReadToEnd();
             }

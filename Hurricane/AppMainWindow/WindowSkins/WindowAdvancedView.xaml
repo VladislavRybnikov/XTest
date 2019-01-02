@@ -47,7 +47,7 @@
                        FontSize="16"
                        Foreground="#FFAAAAAA"
                        IsHitTestVisible="False"
-                       Text="Hurricane" />
+                       Text="X-Test 3" />
         </Grid>
         <Button Grid.Row="0"
                 Grid.RowSpan="2"
@@ -136,16 +136,16 @@
                              dd:DragDrop.IsDropTarget="True"
                              x:Name="nameCodings">
 
-                        <TreeViewItem Header="Systematic codes">
+                        <TreeViewItem Header="{DynamicResource SystematicCodes}">
 
                             <TreeViewItem Header="{DynamicResource Ellieas}"/>
                             <TreeViewItem Header="{DynamicResource RidaMallera}"/>
-                            <TreeViewItem Header="{DynamicResource DDC}"/>
-                            <TreeViewItem Header="{DynamicResource Shenon}"/>
-                            <TreeViewItem Header="{DynamicResource Berger}"/>
+                            <TreeViewItem Header="{DynamicResource Systematic}"/>
+                            
+                            
 
                         </TreeViewItem>
-                        <TreeViewItem Header="Сyclic codes">
+                        <TreeViewItem Header="{DynamicResource СyclicCode}">
 
                             <TreeViewItem Header="{DynamicResource Cyclic}"/>
                             <TreeViewItem Header="{DynamicResource Abramsone}"/>
@@ -155,8 +155,8 @@
 
 
                         </TreeViewItem>
-                        <TreeViewItem Header="Non-binary codes">
-                            <TreeViewItem Header="{DynamicResource EasyReturt}"/>
+                        <TreeViewItem Header="{DynamicResource NonbinaryCodes}">
+                            <!--<TreeViewItem Header="{DynamicResource EasyReturt}"/>-->
                             <TreeViewItem Header="{DynamicResource Iterative}"/>
                             <TreeViewItem Header="{DynamicResource PrimaryNonDouble}"/>
                             <TreeViewItem Header="{DynamicResource CheckQ}"/>
@@ -167,20 +167,21 @@
 
 
                         </TreeViewItem>
-                        <TreeViewItem Header="Other codes">
-                            <TreeViewItem Header="{DynamicResource Greu}"/>
+                        <TreeViewItem Header="{DynamicResource OtherCodes}">
+                            <!--<TreeViewItem Header="{DynamicResource Greu}"/>-->
                           
-                            <TreeViewItem Header="{DynamicResource Systematic}"/>
-
-
                             
-                            <TreeViewItem Header="{DynamicResource EasyReturt}"/>
-                            <TreeViewItem Header="{DynamicResource Iterative}"/>
+
+
+
                             <TreeViewItem Header="{DynamicResource Haffman}"/>
-                            <TreeViewItem Header="{DynamicResource Satellite}"/>
+                            <!--<TreeViewItem Header="{DynamicResource Satellite}"/>-->
                             <TreeViewItem Header="{DynamicResource Recurent}"/>
-                            <TreeViewItem Header="{DynamicResource Entrophy}"/>
+                            <!--<TreeViewItem Header="{DynamicResource Entrophy}"/>
                             <TreeViewItem Header="{DynamicResource ChannelCode}"/>
+                            <TreeViewItem Header="{DynamicResource DDC}"/>
+                            <TreeViewItem Header="{DynamicResource Shenon}"/>
+                            <TreeViewItem Header="{DynamicResource Berger}"/>-->
                             
 
                         </TreeViewItem>
@@ -252,7 +253,7 @@
 
                 </Grid>
             </TabItem>
-            <TabItem Header="{DynamicResource Test}">
+            <!--<TabItem Header="{DynamicResource Test}">
                 <Grid>
                     <Grid HorizontalAlignment="Center"
                           VerticalAlignment="Center"
@@ -415,7 +416,7 @@
                         </TreeView>
                     </Grid>
                 </Grid>
-            </TabItem>
+            </TabItem>-->
             
             <TabItem Header="{DynamicResource Settings}">
                 <TabControl Margin="0,-2,0,0"
@@ -429,12 +430,12 @@
                     <TabItem Header="{DynamicResource General}">
                         <userControls:SettingsView></userControls:SettingsView>
                     </TabItem>
-                    <TabItem Header="{DynamicResource KeyboardShortcuts}">
+                    <!--<TabItem Header="{DynamicResource KeyboardShortcuts}">
                         <userControls:KeyboardShortcutsView Margin="5,10,5,5" Focusable="False" />
                     </TabItem>
                     <TabItem Header="{DynamicResource About}">
                         <userControls:AboutView Margin="5" Focusable="False" />
-                    </TabItem>
+                    </TabItem>-->
                 </TabControl>
             </TabItem>
             

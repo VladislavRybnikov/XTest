@@ -1,12 +1,14 @@
 ﻿using System;
 using Hurricane.XTest.Core.Abstract.Entities;
 using Hurricane.XTest.Core.Const.Enums;
+using Hurricane.XTest.Core.Entities;
 
 namespace Hurricane.XTest.Core.Processors.Encoders
 {
     public class ModuleCodeQ : IEncoder
     {
         public static Random _random = new Random();
+        private JsonParser<QuestionEntity> _jsonParser;
 
         public IQuestionEntity QuestionEntity
         {
@@ -22,16 +24,17 @@ namespace Hurricane.XTest.Core.Processors.Encoders
 
         public ModuleCodeQ(CodeType codeType)
         {
+            _jsonParser = new JsonParser<QuestionEntity>();
             CodeType = codeType;
         }
 
         private IQuestionEntity Encoder()
         {
-            throw new Exception();
+            return _jsonParser.GetIQuestionEntity(1, 11, "ModuleCodeQ");
         }
         private IQuestionEntity Decoder()
         {
-            throw new Exception();
+            return _jsonParser.GetIQuestionEntity(11, 21, "ModuleCodeQ");
         }
     }
 }

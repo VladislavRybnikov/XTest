@@ -102,16 +102,14 @@ namespace Hurricane.Settings
                 //Language codes: http://www.lingoes.net/en/translator/langcode.htm
                 return _languages ?? (_languages = new List<LanguageInfo>
                 {
-                    new LanguageInfo("Deutsch", "/Resources/Languages/Hurricane.de-de.xaml",
-                        new Uri("/Resources/Languages/Icons/de.png", UriKind.Relative), "Alkaline", "de"),
+
                     new LanguageInfo("English", "/Resources/Languages/Hurricane.en-us.xaml",
-                        new Uri("/Resources/Languages/Icons/us.png", UriKind.Relative), "Alkaline", "en"),
-                    new LanguageInfo("Nederlands", "/Resources/Languages/Hurricane.nl-nl.xaml",
-                        new Uri("/Resources/Languages/Icons/nl.png", UriKind.Relative), "DrawCase", "nl"),
+                        new Uri("/Resources/Languages/Icons/us.png", UriKind.Relative), "", "en"),
+  
                     new LanguageInfo("Ukraine", "/Resources/Languages/Hurricane.fi-fi.xaml",
-                        new Uri("/Resources/Languages/Icons/ukraina.png", UriKind.Relative), "Taras Shevchenko", "fi"),
+                        new Uri("/Resources/Languages/Icons/ukraina.png", UriKind.Relative), "", "fi"),
                     new LanguageInfo("Russian", "/Resources/Languages/Hurricane.ru-ru.xaml",
-                        new Uri("/Resources/Languages/Icons/ru.png", UriKind.Relative), "Barmin Alexander", "ru")
+                        new Uri("/Resources/Languages/Icons/ru.png", UriKind.Relative), "", "ru")
                 });
             }
         }

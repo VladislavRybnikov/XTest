@@ -15,7 +15,17 @@
     <system:String x:Key="Reset">paluu</system:String>
     <system:String x:Key="AddTracks">lisää kappale</system:String>
     <system:String x:Key="Play">pelata</system:String>
+    <system:String x:Key="ResultTest">Результат</system:String>
+    <system:String x:Key="NameTest">Ім'я теста: </system:String>
     <system:String x:Key="Pause">tauko</system:String>
+    <system:String x:Key="NumberQuestions">Кількість питань:</system:String>
+    <system:String x:Key="NumberCorrectQuestions">Кількість вірних відповідей:</system:String>
+    <system:String x:Key="Trynumber">Кількість спроб:</system:String>
+    <system:String x:Key="CurrentDate">Дата останього теста:</system:String>
+    <system:String x:Key="BestMark">Найкраща оцінка:</system:String>
+    <system:String x:Key="Hemming">Систематичний код Хемінга</system:String>
+    <system:String x:Key="Varshamov">Варшамова</system:String>
+    <system:String x:Key="Faira">Файра</system:String>
     <system:String x:Key="FileInfo">tiedoston info</system:String>
     <system:String x:Key="FileLocation">sijainti</system:String>
     <system:String x:Key="Remove">poistaa</system:String>
@@ -227,7 +237,6 @@
     <system:String x:Key="AppTheme">Тема додатка</system:String>
     <system:String x:Key="KeyboardShortcuts">Гарячі клавіші</system:String>
     <system:String x:Key="DDC">ДДК</system:String>
-    <system:String x:Key="Faira">Файра</system:String>
     <system:String x:Key="AccentColorString">Колір</system:String>
     <system:String x:Key="View">Інтерфейс</system:String>
     <system:String x:Key="UseThinHeaders">Вузькі заголовки</system:String>
@@ -252,7 +261,10 @@
     <system:String x:Key="Ellieas">Елайса</system:String>
     <system:String x:Key="ExampleCoding">Приклад кодування</system:String>
     <system:String x:Key="ExampleDecoding">Приклад декодування</system:String>
-
+    <system:String x:Key="SystematicCodes">Систематичні коди</system:String>
+    <system:String x:Key="NonbinaryCodes">Недвоїчні коди</system:String>
+    <system:String x:Key="СyclicCode">Циклічні коди</system:String>
+    <system:String x:Key="OtherCodes">Інші коди</system:String>
     <system:String x:Key="Decoding">
         Декодування
     </system:String>

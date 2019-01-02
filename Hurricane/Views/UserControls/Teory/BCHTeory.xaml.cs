@@ -26,16 +26,11 @@ namespace Hurricane.Views.UserControls.Teory
         {
             InitializeComponent();
             this.Loaded += BCHTeory_Loaded;
-
-            using (StreamReader sr = new StreamReader($@"D:\3-тій курс 1-ший семестр\ТІК\Textovki\B4H\{LanguageHolder.Lan}.txt"))
-            {
-                Ter.Text = sr.ReadToEnd();
-            }
         }
 
         private void BCHTeory_Loaded(object sender, RoutedEventArgs e)
         {
-            using (StreamReader sr = new StreamReader($@"D:\3-тій курс 1-ший семестр\ТІК\Textovki\B4H\{LanguageHolder.Lan}.txt"))
+            using (StreamReader sr = new StreamReader($@"Teory\Textovki\B4H\{LanguageHolder.Lan}.txt"))
             {
                 Ter.Text = sr.ReadToEnd();
             }

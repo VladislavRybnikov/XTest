@@ -129,14 +129,14 @@
                         </Grid>
                        
                        
-                        <TextBlock Margin="0,30,0,0"
+                        <!--<TextBlock Margin="0,30,0,0"
                                    Style="{StaticResource TextBlockHeader}"
                                    behaviors:TextBlockBehavior.UpperText="{DynamicResource View}" />
                         
                         <CheckBox Margin="0,10,0,0"
                                   Content="{DynamicResource UseThinHeaders}"
-                                  IsChecked="{Binding Config.UseThinHeaders}" />
-                        <TextBlock Margin="0,15,0,0" Text="{DynamicResource TabControlTransition}" />
+                                  IsChecked="{Binding Config.UseThinHeaders}" />-->
+                        <!--<TextBlock Margin="0,15,0,0" Text="{DynamicResource TabControlTransition}" />
                         <ComboBox Width="300"
                                   Margin="0,5,0,0"
                                   HorizontalAlignment="Left"
@@ -149,7 +149,7 @@
                             <ComboBoxItem Content="{DynamicResource Fade}" />
                             <Separator />
                             <ComboBoxItem Content="{DynamicResource None}" />
-                        </ComboBox>
+                        </ComboBox>-->
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>

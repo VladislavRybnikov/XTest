@@ -81,14 +81,14 @@ namespace Hurricane.AppMainWindow.WindowSkins
 
         public void EnableWindow()
         {
-            var visulisation = AudioVisualisationContentControl.Tag as IAudioVisualisation;
-            if (visulisation != null) visulisation.Enable();
+            //var visulisation = AudioVisualisationContentControl.Tag as IAudioVisualisation;
+            //if (visulisation != null) visulisation.Enable();
         }
 
         public void DisableWindow()
         {
-            var visulisation = AudioVisualisationContentControl.Tag as IAudioVisualisation;
-            if (visulisation != null) visulisation.Disable();
+            //var visulisation = AudioVisualisationContentControl.Tag as IAudioVisualisation;
+            //if (visulisation != null) visulisation.Disable();
         }
 
         public WindowSkinConfiguration Configuration { get; set; }

@@ -18,22 +18,24 @@ using System.Windows.Shapes;
 namespace Hurricane.Views.UserControls.Teory
 {
     /// <summary>
-    /// Логика взаимодействия для DDKTeory.xaml
+    /// Логика взаимодействия для GreyTeory.xaml
     /// </summary>
-    public partial class DDKTeory : UserControl
+    public partial class GreyTeory : UserControl
     {
-        public DDKTeory()
+        public GreyTeory()
         {
             InitializeComponent();
-            this.Loaded += DDKTeory_Loaded;
+            this.Loaded += GreyTeory_Loaded;
         }
 
-        private void DDKTeory_Loaded(object sender, RoutedEventArgs e)
+        private void GreyTeory_Loaded(object sender, RoutedEventArgs e)
         {
-            using (StreamReader sr = new StreamReader($@"Teory\Textovki\DDK\{LanguageHolder.Lan}.txt"))
-            {
-                Ter.Text = sr.ReadToEnd();
-            }
+           
+                using (StreamReader sr = new StreamReader($@"Teory\Textovki\Grey\{LanguageHolder.Lan}.txt"))
+                {
+                    Ter.Text = sr.ReadToEnd();
+                }
+           
         }
     }
 }

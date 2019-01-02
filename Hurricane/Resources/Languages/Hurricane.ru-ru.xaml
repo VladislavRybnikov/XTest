@@ -11,6 +11,7 @@
     <system:String x:Key="NameOfPlaylist">Название плейлиста:</system:String>
     <system:String x:Key="Create">Создать</system:String>
     <system:String x:Key="Cancel">Отмена</system:String>
+    <system:String x:Key="ResultTest">Результат</system:String>
     <system:String x:Key="FilesGetImported">Импорт({0} из {1})</system:String>
     <system:String x:Key="Reset">Сброс</system:String>
     <system:String x:Key="AddTracks">Добавить композиции</system:String>
@@ -19,6 +20,15 @@
     <system:String x:Key="FileInfo">Информация о файле</system:String>
     <system:String x:Key="FileLocation">Расположение файла</system:String>
     <system:String x:Key="Remove">Удалить</system:String>
+    <system:String x:Key="NameTest">имя теста:</system:String>
+    <system:String x:Key="NumberQuestions">Количество вопросов:</system:String>
+    <system:String x:Key="NumberCorrectQuestions">Количество верных ответов:</system:String>
+    <system:String x:Key="Trynumber">Количество попыток:</system:String>
+    <system:String x:Key="CurrentDate">Дата останього теста:</system:String>
+    <system:String x:Key="BestMark">Лучшая оценка:</system:String>
+    <system:String x:Key="Hemming">Систематичний код Хеминга</system:String>
+    <system:String x:Key="Varshamov">Варшамова</system:String>
+    <system:String x:Key="Faira">Файра</system:String>
     <system:String x:Key="Del">Del</system:String>
     <system:String x:Key="SelectedFiles">Выбранные файлы</system:String>
     <system:String x:Key="SelectedFolder">Выбранная папка</system:String>
@@ -26,7 +36,7 @@
     <system:String x:Key="RemoveDuplicates">Удаление дубликатов</system:String>
     <system:String x:Key="NoArtist">нет исполнителя</system:String>
     <system:String x:Key="NowPlaying">Сейчас играет</system:String>
-    <system:String x:Key="Teory">Терия</system:String>
+    <system:String x:Key="Teory">Теория</system:String>
     <system:String x:Key="BaseStartTest">Начать</system:String>
     <system:String x:Key="NextTest">Далие</system:String>
     <system:String x:Key="Coding">Кодирование</system:String>
@@ -386,7 +396,7 @@
     <system:String x:Key="Shenon">Шенона-Фано</system:String>
     <system:String x:Key="Berger">Бергера</system:String>
     <system:String x:Key="Greu">Грея</system:String>
-    <system:String x:Key="Faira">Файра</system:String>
+    
     <system:String x:Key="RidaMallera">Рида Маллера</system:String>
     <system:String x:Key="Cyclic">Циклические коды</system:String>
     <system:String x:Key="Systematic">Систематические коды</system:String>
@@ -401,6 +411,10 @@
     <system:String x:Key="ChannelCode">Канальные Коды</system:String>
     <system:String x:Key="ExampleCoding">Пример кодирования</system:String>
     <system:String x:Key="Ellieas">Эллайеса</system:String>
+    <system:String x:Key="SystematicCodes">Систематические коды</system:String>
+    <system:String x:Key="NonbinaryCodes">Недвоичные коды</system:String>
+    <system:String x:Key="СyclicCode">Циклические коды</system:String>
+    <system:String x:Key="OtherCodes">Другие коды</system:String>
     <system:String x:Key="DashedLine">
         -----------
     </system:String>

@@ -30,7 +30,7 @@ namespace Hurricane.Views.UserControls.Teory
 
         private void BergeraTeory_Loaded(object sender, RoutedEventArgs e)
         {
-            using (StreamReader sr = new StreamReader($@"D:\3-тій курс 1-ший семестр\Прога\Новая папка\XTest\Hurricane\bin\Debug\Teory\Textovki\Code Bergera\{LanguageHolder.Lan}.txt"))
+            using (StreamReader sr = new StreamReader($@"Teory\Textovki\Code Bergera\{LanguageHolder.Lan}.txt"))
             {
                 Ter.Text = sr.ReadToEnd();
             }
